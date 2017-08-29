@@ -23,8 +23,8 @@ namespace IdentitySample
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.less"));
+                      "~/Content/less/bootstrap.css",
+                      "~/Content/site.css"));
         }
     }
 }

@@ -165,11 +165,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap - Copy.css" />
+    <Content Include="Content\less\bootstrap.css">
+      <DependentUpon>bootstrap.less</DependentUpon>
+    </Content>
+    <Content Include="Content\less\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
     <Content Include="Content\less\variables.css">
       <DependentUpon>variables.less</DependentUpon>
     </Content>
     <Content Include="Content\less\variables.min.css">
       <DependentUpon>variables.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
     </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -177,6 +189,12 @@
     <Content Include="packages.config" />
     <Content Include="Content\less\variables.css.map">
       <DependentUpon>variables.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css.map">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
+    <Content Include="Content\less\bootstrap.css.map">
+      <DependentUpon>bootstrap.css</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
