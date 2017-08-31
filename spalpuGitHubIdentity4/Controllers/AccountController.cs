@@ -19,7 +19,7 @@ namespace IdentitySample.Controllers
         {
         }
 
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -83,7 +83,7 @@ namespace IdentitySample.Controllers
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
+                    ModelState.AddModelError("", "Неверное имя пользователя или пароль.");
                     return View(model);
             }
         }
@@ -101,7 +101,7 @@ namespace IdentitySample.Controllers
             var user = await UserManager.FindByIdAsync(await SignInManager.GetVerifiedUserIdAsync());
             if (user != null)
             {
-                ViewBag.Status = "For DEMO purposes the current " + provider + " code is: " + await UserManager.GenerateTwoFactorTokenAsync(user.Id, provider);
+                ViewBag.Status = "Tекущий " + provider + " код: " + await UserManager.GenerateTwoFactorTokenAsync(user.Id, provider);
             }
             return View(new VerifyCodeViewModel { Provider = provider, ReturnUrl = returnUrl });
         }
@@ -127,7 +127,7 @@ namespace IdentitySample.Controllers
                     return View("Lockout");
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid code.");
+                    ModelState.AddModelError("", "Неверный код.");
                     return View(model);
             }
         }
@@ -150,16 +150,16 @@ namespace IdentitySample.Controllers
             if (ModelState.IsValid)
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-                var result = await UserManager.CreateAsync(user, model.Password);
+                IdentityResult result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
                     var code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking this link: <a href=\"" + callbackUrl + "\">link</a>");
+                    await UserManager.SendEmailAsync(user.Id, "Завершить регистрацию", "Спасибо за регистрацию на сайте. Для завершения регистрации перейдите по ссылке: <a href=\"" + callbackUrl + "\">завершить регистрацию</a>");
                     ViewBag.Link = callbackUrl;
                     return View("DisplayEmail");
                 }
-                AddErrors(result);
+                AddErrors(result, model);
             }
 
             // If we got this far, something failed, redisplay form
@@ -205,7 +205,7 @@ namespace IdentitySample.Controllers
 
                 var code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
                 var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                await UserManager.SendEmailAsync(user.Id, "Reset Password", "Please reset your password by clicking here: <a href=\"" + callbackUrl + "\">link</a>");
+                await UserManager.SendEmailAsync(user.Id, "Сброс пароля", "Сбросьте пароль, нажав здесь: <a href=\"" + callbackUrl + "\">Сбросить пароль</a>");
                 ViewBag.Link = callbackUrl;
                 return View("ForgotPasswordConfirmation");
             }
@@ -252,7 +252,7 @@ namespace IdentitySample.Controllers
             {
                 return RedirectToAction("ResetPasswordConfirmation", "Account");
             }
-            AddErrors(result);
+            AddErrors(result, model);
             return View();
         }
 
@@ -371,7 +371,7 @@ namespace IdentitySample.Controllers
                         return RedirectToLocal(returnUrl);
                     }
                 }
-                AddErrors(result);
+                AddErrors(result, model);
             }
 
             ViewBag.ReturnUrl = returnUrl;
@@ -413,6 +413,33 @@ namespace IdentitySample.Controllers
             foreach (var error in result.Errors)
             {
                 ModelState.AddModelError("", error);
+            }
+        }
+
+        private void AddErrors(IdentityResult result, RegisterViewModel model)
+        {
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError("", "Email " + model.Email + " уже существует");
+                //ModelState.AddModelError("", error);
+            }
+        }
+
+        private void AddErrors(IdentityResult result, ResetPasswordViewModel model)
+        {
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError("", "Email " + model.Email + " уже существует");
+                //ModelState.AddModelError("", error);
+            }
+        }
+
+        private void AddErrors(IdentityResult result, ExternalLoginConfirmationViewModel model)
+        {
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError("", "Email " + model.Email + " уже существует");
+                //ModelState.AddModelError("", error);
             }
         }
 

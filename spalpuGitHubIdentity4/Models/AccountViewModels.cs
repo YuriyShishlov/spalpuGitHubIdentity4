@@ -5,7 +5,7 @@ namespace IdentitySample.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Поле Email обязательно для заполнения")]
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
@@ -24,15 +24,15 @@ namespace IdentitySample.Models
 
     public class VerifyCodeViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Поле Provider обязательно для заполнения")]
         public string Provider { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Поле Code обязательно для заполнения")]
         [Display(Name = "Code")]
         public string Code { get; set; }
         public string ReturnUrl { get; set; }
 
-        [Display(Name = "Remember this browser?")]
+        [Display(Name = "Запомнить?")]
         public bool RememberBrowser { get; set; }
     }
 
@@ -45,55 +45,56 @@ namespace IdentitySample.Models
 
     public class LoginViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Поле Email обязательно для заполнения")]
         [Display(Name = "Email")]
-        [EmailAddress]
+        [EmailAddress(ErrorMessage = "Email адрес указан не правильно")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Поле Пароль обязательно для заполнения")]
+        [StringLength(20, MinimumLength = 5, ErrorMessage = "Следует указать пароль от 5 до 20 символов")]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Пароль")]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Запомнить?")]
         public bool RememberMe { get; set; }
     }
 
     public class RegisterViewModel
     {
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage = "Поле Email обязательно для заполнения")]
+        [EmailAddress(ErrorMessage = "Email адрес указан не правильно")]
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-        [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [Required(ErrorMessage = "Поле Пароль обязательно для заполнения")]
+        [StringLength(20, MinimumLength = 5, ErrorMessage = "Следует указать пароль от 5 до 20 символов")]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Пароль")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "Подтверждение пароля")]
+        [Compare("Password", ErrorMessage = "Пароли не совпадают.")]
         public string ConfirmPassword { get; set; }
     }
 
     public class ResetPasswordViewModel
     {
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage = "Поле Email обязательно для заполнения")]
+        [EmailAddress(ErrorMessage = "Email адрес указан не правильно")]
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-        [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [Required(ErrorMessage = "Поле Пароль обязательно для заполнения")]
+        [StringLength(20, MinimumLength = 5, ErrorMessage = "Следует указать пароль от 5 до 20 символов")]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Пароль")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "Подтверждение пароля")]
+        [Compare("Password", ErrorMessage = "Пароли не совпадают.")]
         public string ConfirmPassword { get; set; }
 
         public string Code { get; set; }
@@ -101,8 +102,8 @@ namespace IdentitySample.Models
 
     public class ForgotPasswordViewModel
     {
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage = "Поле Email обязательно для заполнения")]
+        [EmailAddress(ErrorMessage = "Email адрес указан не правильно")]
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
