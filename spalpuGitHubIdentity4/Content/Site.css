@@ -1,35 +1,205 @@
-﻿body {
-  padding-top: 50px;
-  padding-bottom: 20px;
+﻿/*Начало Определяем переменные Less*/
+/*Фон aside при наведениии*/
+/*Цвет шрифта наведенной ссылки(стрелок вперед, назад)*/
+/*Цвет шрифта стрелок вперед, назад*/
+/*Цвет шрифта в article*/
+/*Цвет фона стрелок вперед, назад*/
+/*Конец Определяем переменные Less*/
+/*Начало Общие установки*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #868585;
+  font-weight: normal;
+  background-color: #fdfcfb;
 }
-/* Set padding to keep content from hitting the edges */
-.body-content {
-  padding-left: 15px;
-  padding-right: 15px;
+body a,
+body a:hover,
+body a:visited,
+body a:link,
+body a:active {
+  text-decoration: none;
+  /*Убрать подчеркивание у ссылок*/
 }
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-  max-width: 280px;
+/*Конец Общие установки*/
+/*Начало Навигационное меню*/
+.navbar {
+  margin-bottom: 0;
 }
-/* styles for validation helpers */
-.field-validation-error {
-  color: #b94a48;
+.panel {
+  margin-top: 20px;
+  margin-bottom: 0;
 }
-.field-validation-valid {
-  display: none;
+.navbar-brand img {
+  width: 50px;
+  /*Размер логотипа*/
+  height: 50px;
+  /*Размер логотипа*/
+  position: relative;
+  top: -15px;
 }
-input.input-validation-error {
-  border: 1px solid #b94a48;
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
 }
-input[type="checkbox"].input-validation-error {
-  border: 0 none;
+#bs-example-navbar-collapse-1 img {
+  width: 20px;
+  /*Размеры иконок входа и регистрации*/
+  height: 20px;
+  /*Размеры иконок входа и регистрации*/
 }
-.validation-summary-errors {
-  color: #b94a48;
+/*Конец Навигационное меню*/
+/*Начало слайдер*/
+/*.fa{
+    position: relative;
+    top: 158px;
+}*/
+.fon_slider {
+  background-color: #D4D4D4;
 }
-.validation-summary-valid {
-  display: none;
+.carousel-indicators li {
+  border-color: blue;
+  border-width: 2px;
 }
+/*Конец слайдер*/
+/*Начало Обертки двух колонок*/
+#wrap {
+  background-color: aliceblue;
+}
+/*Конец Обертки двух колонок*/
+/*Начало Первая колонка*/
+#left {
+  background-color: #f8f8f8;
+  padding: 0 10px;
+  font-size: 16px;
+}
+/*Конец Первая колонка*/
+/*Начало Вторая колонка*/
+#right {
+  background-color: #f8f8f8;
+  color: #0d49a8;
+  padding: 0 20px;
+}
+#right p {
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 37px;
+  margin-bottom: 10px;
+}
+#right h1 {
+  margin-top: 0;
+  font-size: 28px;
+}
+#right strong {
+  font-weight: 100;
+}
+/*Конец Вторая колонка*/
+/*Начало Стрелки Вперед Назад*/
+#loadcontent a.forward,
+a.back {
+  display: block;
+  height: 30px;
+  width: 50%;
+  background-color: #add1e5;
+  color: #808080;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+}
+#loadcontent a.back {
+  float: left;
+}
+#loadcontent a.forward {
+  float: right;
+}
+#loadcontent a:hover {
+  color: #ffffff;
+}
+.first_back {
+  visibility: hidden;
+}
+/*Конец Стрелки Вперед Назад*/
+/*Начало плагина metisMenu*/
+#menu {
+  margin: 0;
+  padding-left: 10px;
+}
+#menu,
+#menu ul {
+  list-style: none;
+}
+#menu a {
+  position: relative;
+  display: block;
+  padding: 4px 10px 4px 0;
+}
+#menu a:hover {
+  background-color: #eeeeee;
+}
+.arrow {
+  float: right;
+}
+.glyphicon.arrow:before {
+  content: "\e079";
+}
+.active > a > .glyphicon.arrow:before {
+  content: "\e114";
+}
+.fa.arrow:before {
+  content: "\f104";
+}
+.active > a > .fa.arrow:before {
+  content: "\f107";
+}
+.plus-times {
+  float: right;
+}
+.fa.plus-times:before {
+  content: "\f067";
+}
+.active > a > .fa.plus-times {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.plus-minus {
+  float: right;
+}
+.fa.plus-minus:before {
+  content: "\f067";
+}
+.active > a > .fa.plus-minus:before {
+  content: "\f068";
+}
+/*Конец плагина metisMenu*/
+/*Начало блока footer*/
+footer {
+  /*clear: both;
+    width: 100%;
+    height: 33px;
+    background-color: #c1c4c2;
+    border-radius: 0px 0px 20px 20px;
+    -moz-border-radius: 0px 0px 20px 20px;
+    -webkit-border-radius: 0px 0px 20px 20px;
+    -khtml-border-radius: 0px 0px 20px 20px;*/
+}
+footer p {
+  text-align: center;
+  padding-top: 12px;
+  color: #ffffff;
+}
+/*footer span {
+        font-family: Courier New, Courier, monospace;
+        font-size: 1.1em;
+        font-style: oblique;
+    }*/
+/*Было: <span>.vebner.ru</span>*/
+/*Конец блока footer*/
 /*# sourceMappingURL=Site.css.map */
