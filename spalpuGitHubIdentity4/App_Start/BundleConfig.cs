@@ -13,7 +13,8 @@ namespace IdentitySample
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/respond.js",
                         "~/Scripts/metisMenu.js",
-                        "~/Scripts/up.js"));
+                        "~/Scripts/up.js",
+                        "~/Scripts/startMenu.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));

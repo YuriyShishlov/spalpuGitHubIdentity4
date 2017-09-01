@@ -207,6 +207,8 @@
     <Content Include="Content\less\bootstrap.css.map">
       <DependentUpon>bootstrap.css</DependentUpon>
     </Content>
+    <Content Include="Scripts\EqualHeight.js" />
+    <Content Include="Scripts\startMenu.js" />
     <Content Include="Views\Home\LifeGo\SPHA\_abdominal_massage.cshtml" />
     <Content Include="Views\Home\LifeGo\SPHA\_acute_period1.cshtml" />
     <Content Include="Views\Home\LifeGo\SPHA\_acute_period2.cshtml" />
