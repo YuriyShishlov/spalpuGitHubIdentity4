@@ -22,6 +22,6 @@ $('.carousel').carousel({
 });
 
 //Чтобы карусель останавливаась при выборе картинки
-$("#slade1").click(function () {
+$(".slade").click(function () {
     $("#my-carousel").carousel('pause');
 });

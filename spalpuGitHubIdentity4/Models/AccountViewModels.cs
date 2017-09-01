@@ -62,6 +62,10 @@ namespace IdentitySample.Models
 
     public class RegisterViewModel
     {
+        [Required(ErrorMessage = "Поле Отображаемое имя обязательно для заполнения")]
+        [Display(Name = "Отображаемое имя")]
+        public string NameDisplay { get; set; }
+
         [Required(ErrorMessage = "Поле Email обязательно для заполнения")]
         [EmailAddress(ErrorMessage = "Email адрес указан не правильно")]
         [Display(Name = "Email")]
