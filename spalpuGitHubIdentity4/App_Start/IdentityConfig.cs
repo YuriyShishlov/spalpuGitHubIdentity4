@@ -114,7 +114,7 @@ namespace IdentitySample.Models
         public static void InitializeIdentityForEF(ApplicationDbContext db) {
             var userManager = HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var roleManager = HttpContext.Current.GetOwinContext().Get<ApplicationRoleManager>();
-            const string name = "a@a.ru";
+            const string name = "yura@yura.yura";
             const string password = "yura13";
             const string roleName = "Admin";
 
@@ -127,7 +127,7 @@ namespace IdentitySample.Models
 
             var user = userManager.FindByName(name);
             if (user == null) {
-                user = new ApplicationUser { UserName = name, Email = name };
+                user = new ApplicationUser { UserName = name, Email = name, NameDisplay = "Юрий", DateCreate = DateTime.Now, EmailConfirmed = true};
                 var result = userManager.Create(user, password);
                 result = userManager.SetLockoutEnabled(user.Id, false);
             }

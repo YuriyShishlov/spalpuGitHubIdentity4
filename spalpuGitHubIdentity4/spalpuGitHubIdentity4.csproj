@@ -164,6 +164,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\spalpuGitHubIdentity4.mdf" />
+    <Content Include="App_Data\spalpuGitHubIdentity4_log.ldf">
+      <DependentUpon>spalpuGitHubIdentity4.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap - Copy.css" />
     <Content Include="Content\images\andr.jpg" />
     <Content Include="Content\images\favicon.ico" />
@@ -740,6 +744,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709020756132_InitialCreate.cs" />
+    <Compile Include="Migrations\201709020756132_InitialCreate.Designer.cs">
+      <DependentUpon>201709020756132_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709020810462_DateCreate.cs" />
+    <Compile Include="Migrations\201709020810462_DateCreate.Designer.cs">
+      <DependentUpon>201709020810462_DateCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AdminViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -749,7 +762,12 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <EmbeddedResource Include="Migrations\201709020756132_InitialCreate.resx">
+      <DependentUpon>201709020756132_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709020810462_DateCreate.resx">
+      <DependentUpon>201709020810462_DateCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
