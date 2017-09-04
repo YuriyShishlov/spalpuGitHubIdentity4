@@ -65,27 +65,49 @@ namespace IdentitySample.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
+            //время блокировки
+            //UserManager.DefaultAccountLockoutTimeSpan = TimeSpan.FromHours(1);
+            //количество попыток, если 5, то на пятую "неправильную" блокирует
+            //UserManager.MaxFailedAccessAttemptsBeforeLockout = 2;
             // This doen't count login failures towards lockout only two factor authentication
-            // To enable password failures to trigger lockout, change to shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
-            switch (result)
+            //shouldLockout: true Чтобы заблокировать пользователя
+            //var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            //switch (result)
+            //{
+            //    case SignInStatus.Success:
+            //        return RedirectToLocal(returnUrl);
+            //    case SignInStatus.LockedOut:
+            //        return View("Lockout");
+            //    case SignInStatus.RequiresVerification:
+            //        return RedirectToAction("SendCode", new { ReturnUrl = returnUrl });
+            //    case SignInStatus.Failure:
+            //    default:
+            //        ModelState.AddModelError("", "Неверное имя пользователя или пароль.");
+            //        return View(model);
+            //}
+            if (ModelState.IsValid)
             {
-                case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
-                case SignInStatus.LockedOut:
-                    return View("Lockout");
-                case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl });
-                case SignInStatus.Failure:
-                default:
-                    ModelState.AddModelError("", "Неверное имя пользователя или пароль.");
-                    return View(model);
+                var user = await UserManager.FindAsync(model.Email, model.Password);
+                if (user != null)
+                {
+                    if (user.EmailConfirmed == true)
+                    {
+                        await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+                        return RedirectToLocal(returnUrl);
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Не подтвержден email.");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Неверный логин или пароль");
+                }
             }
+            return View(model);
+
+            
         }
 
         //
@@ -201,6 +223,7 @@ namespace IdentitySample.Controllers
                 if (user == null || !(await UserManager.IsEmailConfirmedAsync(user.Id)))
                 {
                     // Don't reveal that the user does not exist or is not confirmed
+                    //Не показывайте, что пользователь не существует или не подтвержден
                     return View("ForgotPasswordConfirmation");
                 }
 
@@ -212,6 +235,7 @@ namespace IdentitySample.Controllers
             }
 
             // If we got this far, something failed, redisplay form
+            // Если мы дошли так далеко, что-то не получилось, переиздайте форму
             return View(model);
         }
 
