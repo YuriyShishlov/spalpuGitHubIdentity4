@@ -2,6 +2,7 @@
 
 namespace IdentitySample.Controllers
 {
+    
     public class HomeController : Controller
     {
         public ActionResult Index(string strpage = "main")
