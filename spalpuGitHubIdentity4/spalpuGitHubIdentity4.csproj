@@ -165,13 +165,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AData\spalpuGitHubIdentity4.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="AData\spalpuGitHubIdentity4_log.ldf">
-      <DependentUpon>spalpuGitHubIdentity4.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="App_Data\spalpuGitHubIdentity4.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -605,6 +598,8 @@
     <Content Include="Views\Home\_TreePartial.cshtml" />
     <Content Include="Views\Shared\_LoginPartial - Copy.cshtml" />
     <Content Include="Views\Shared\_LoginPartial - Copy - Copy.cshtml" />
+    <Content Include="A\spalpuGitHubIdentity4.mdf_copy" />
+    <Content Include="A\spalpuGitHubIdentity4_log.ldf_copy" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
