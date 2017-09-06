@@ -33,10 +33,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active_link"><a href="#">Главная</a></li>
-                        <li><a href="#">ЛПУ</a></li>
-                        <li><a href="#">Видео</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li>@Html.ActionLink("Главная", "Index", "Home", routeValues: null, htmlAttributes: new { @class="active_link" })</li>
+                        @*<li><a href="#">ЛПУ</a></li>*@
+                        @*<li><a href="#">Видео</a></li>*@
+                        <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
                         @*<li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Разное<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
@@ -90,14 +90,14 @@
                     </div>
                 </div>
 
-                <a class="left carousel-control" href="#my-carousel" data-slide="prev">
+                @*<a class="left carousel-control" href="#my-carousel" data-slide="prev">*@
                     @*Стрелка на слайдере влево*@
                     @*<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>*@
-                </a>
-                <a class="right carousel-control" href="#my-carousel" data-slide="next">
+                @*</a>
+                <a class="right carousel-control" href="#my-carousel" data-slide="next">*@
                     @*Стрелка на слайдере вправо*@
                     @*<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>*@
-                </a>
+                @*</a>*@
             </div>
         </div>
     </div>

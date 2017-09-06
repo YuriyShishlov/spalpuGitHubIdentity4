@@ -57,8 +57,11 @@ body a:active {
   background-color: #D4D4D4;
 }
 .carousel-indicators li {
-  border-color: blue;
+  border-color: #D4D4D4;
   border-width: 2px;
+}
+.item img {
+  border-radius: 5px;
 }
 /*Конец слайдер*/
 /*Начало Обертки двух колонок*/
@@ -121,6 +124,9 @@ a.back {
 }
 .first_back {
   visibility: hidden;
+}
+.p_last {
+  margin: 0 0 -30px 0;
 }
 /*Конец Стрелки Вперед Назад*/
 /*Начало плагина metisMenu*/
