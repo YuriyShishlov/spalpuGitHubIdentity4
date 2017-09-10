@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Наши чудесные и мудрые Мышцы";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section meta
+{
+    <meta name="description" content="Наши чудесные и мудрые мышцы. В опорно-двигательном аппарате человеческого организма его пассивная часть (кости, связки, суставы) и активная (мышцы), тесно взаимосвязаны." />
+    <meta name="yandex-verification" content="9c449c3a09bc553d" />
+}
+
+<div class="row">
+    <div class="col-lg-3">
+        <div class="panel panel-default" id="left">
+            @Html.Partial("~/Views/Shared/_TreePartial.cshtml")
+        </div>
+    </div>
+    <div class="col-lg-9">
+        <div class="panel panel-default" id="right">
+            <div id="loadcontent">
+                @Html.Partial("~/Views/Shared/LifeGo/_mysshtsy.cshtml")
+            </div>
+        </div>
+    </div>
+</div>

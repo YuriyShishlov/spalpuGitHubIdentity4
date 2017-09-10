@@ -7,7 +7,7 @@
 @background_second_col: #F8F8F8; //Цвет фона первой колонки
 @navbar_toggle_border_color: transparent; //Цвет border кнопки для мобильных
 @background_aside_active: #EEEEEE; /*Фон aside при наведениии*/
-@color_back_forward_hover: #fff; /*Цвет шрифта наведенной ссылки(стрелок вперед, назад)*/
+@color_back_forward_hover: #eeeeee; /*Цвет шрифта наведенной ссылки(стрелок вперед, назад)*/
 @color_back_forward: #808080; /*Цвет шрифта стрелок вперед, назад*/
 @color_font_article: #0d49a8; /*Цвет шрифта в article*/
 @background_back_forward: #add1e5; /*Цвет фона стрелок вперед, назад*/
@@ -65,16 +65,16 @@ body a:active {
     top: 158px;
 }*/
 
-.fon_slider{
+.fon_slider {
     background-color: #D4D4D4;
 }
 
-.carousel-indicators li{
-    border-color: #D4D4D4;//цвет окружности
-    border-width: 2px;//ширина окружности
+.carousel-indicators li {
+    border-color: #D4D4D4; //цвет окружности
+    border-width: 2px; //ширина окружности
 }
 
-.item img{
+.item img {
     border-radius: 5px;
 }
 /*Конец слайдер*/
@@ -94,31 +94,61 @@ body a:active {
 /*Конец Первая колонка*/
 
 /*Начало Вторая колонка*/
+.imgPhoto {
+    float: left;
+    margin: 0 20px 0 20px;
+    width: 22%;
+    min-width: 120px;
+}
+
 #right {
-    background-color: @background_second_col;//Цвет фона
-    color: @color_font_article;//Цвет шрифта
-    padding: 0 20px;//Отступы справа и слева
+    background-color: @background_second_col; //Цвет фона
+    color: @color_font_article; //Цвет шрифта
+    /*padding: 0 20px;*/ //Отступы справа и слева
 }
 
-#right p{
-    font-size: @size + 2px;//Размер шрифта
-    text-align: justify;//Выравнивание текста с двух сторон
-    text-indent: 37px;//Отступ первой строки в параграфе
-    margin-bottom: 10px;//Отступ снизу
+#right p {
+    font-size: @size + 2px; //Размер шрифта
+    text-align: justify; //Выравнивание текста с двух сторон
+    text-indent: 37px; //Отступ первой строки в параграфе
+    margin: 0 20px 10px 20px; //Отступы
 }
 
-#right h1{
-    margin-top: 0;
+#right h1 {
+    margin: 59px 0 30px 35px;
     font-size: @size + 10px;
 }
 
-#right strong{
-    font-weight: 100;//Чтобы ослабить strong
+#right h2 {
+    margin: 29px 0 24px 20px;
+    padding: 0;
+}
+
+#right strong {
+    font-weight: 100; //Чтобы ослабить strong
+}
+/*Выравнивание для главной страницы*/
+.p_andrei {
+    margin-top: 32px !important;
+    margin-left: 42px !important;
+    margin-bottom: 30px !important;
+}
+
+.rightalign {
+    text-align: right !important;
+}
+
+.centeralign {
+    text-align: center !important;
 }
 /*Конец Вторая колонка*/
 
 /*Начало Стрелки Вперед Назад*/
-#loadcontent a.forward, a.back {
+#loadcontent{
+    overflow: hidden;
+}
+
+#loadcontent a.forward, #loadcontent a.back {
     display: block;
     height: 30px;
     width: 50%;
@@ -127,11 +157,11 @@ body a:active {
     text-align: center;
     line-height: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    /*margin-bottom: 20px;*/
+    /*border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;
+    -khtml-border-radius: 10px;*/
 }
 
 #loadcontent a.back {
@@ -148,10 +178,6 @@ body a:active {
 
 .first_back {
     visibility: hidden;
-}
-
-.p_last{
-    margin: 0 0 -30px 0;
 }
 /*Конец Стрелки Вперед Назад*/
 

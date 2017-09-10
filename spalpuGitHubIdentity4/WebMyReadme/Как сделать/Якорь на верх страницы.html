@@ -1,0 +1,22 @@
+﻿1. Скрипт up.js:
+function OnCompleteJs(request, status) {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500);
+    return false;
+}
+
+2. Эта функция будет запущена по окончанию AJAX-запроса:
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "back" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new {strpage = "LifeGo/_mysshtsy"}, new AjaxOptions() {UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs"}, new {@class = "forward"})
+
+3. _Layout.cshtml:
+@Scripts.Render("~/bundles/jquery")
+
+4. BundleConfig.cs:
+bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.unobtrusive-ajax.js",
+                        "~/Scripts/tree.js",
+                        "~/Scripts/up.js"));
+

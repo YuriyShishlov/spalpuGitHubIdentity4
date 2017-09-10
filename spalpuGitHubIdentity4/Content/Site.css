@@ -77,28 +77,53 @@ body a:active {
 }
 /*Конец Первая колонка*/
 /*Начало Вторая колонка*/
+.imgPhoto {
+  float: left;
+  margin: 0 20px 0 20px;
+  width: 22%;
+  min-width: 120px;
+}
 #right {
   background-color: #f8f8f8;
   color: #0d49a8;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
 }
 #right p {
   font-size: 20px;
   text-align: justify;
   text-indent: 37px;
-  margin-bottom: 10px;
+  margin: 0 20px 10px 20px;
 }
 #right h1 {
-  margin-top: 0;
+  margin: 59px 0 30px 35px;
   font-size: 28px;
+}
+#right h2 {
+  margin: 29px 0 24px 20px;
+  padding: 0;
 }
 #right strong {
   font-weight: 100;
 }
+/*Выравнивание для главной страницы*/
+.p_andrei {
+  margin-top: 32px !important;
+  margin-left: 42px !important;
+  margin-bottom: 30px !important;
+}
+.rightalign {
+  text-align: right !important;
+}
+.centeralign {
+  text-align: center !important;
+}
 /*Конец Вторая колонка*/
 /*Начало Стрелки Вперед Назад*/
+#loadcontent {
+  overflow: hidden;
+}
 #loadcontent a.forward,
-a.back {
+#loadcontent a.back {
   display: block;
   height: 30px;
   width: 50%;
@@ -107,11 +132,11 @@ a.back {
   text-align: center;
   line-height: 30px;
   font-weight: bold;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -khtml-border-radius: 10px;
+  /*margin-bottom: 20px;*/
+  /*border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;*/
 }
 #loadcontent a.back {
   float: left;
@@ -120,13 +145,10 @@ a.back {
   float: right;
 }
 #loadcontent a:hover {
-  color: #ffffff;
+  color: #eeeeee;
 }
 .first_back {
   visibility: hidden;
-}
-.p_last {
-  margin: 0 0 -30px 0;
 }
 /*Конец Стрелки Вперед Назад*/
 /*Начало плагина metisMenu*/

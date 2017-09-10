@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Массаж";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section meta
+{
+    <meta name="description" content="Массаж –  это, вероятно,  самый простой  и древний Метод Лечения (вспомните, как при ушибе рука автоматически тянется погладить место ушиба).  На Востоке применение Массажа" />
+    <meta name="yandex-verification" content="9c449c3a09bc553d" />
+}
+
+<div class="row">
+    <div class="col-lg-3">
+        <div class="panel panel-default" id="left">
+            @Html.Partial("~/Views/Shared/_TreePartial.cshtml")
+        </div>
+    </div>
+    <div class="col-lg-9">
+        <div class="panel panel-default" id="right">
+            <div id="loadcontent">
+                @Html.Partial("~/Views/Shared/LifeGo/SPHA/_massage.cshtml")
+            </div>
+        </div>
+    </div>
+</div>

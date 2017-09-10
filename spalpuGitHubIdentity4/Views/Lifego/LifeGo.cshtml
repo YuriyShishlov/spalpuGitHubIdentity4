@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Жизнь - это Движение";
+}
+
+@section meta
+{
+    <meta name="description" content="‘Жизнь – это движение’… банальный девиз, над которым обычно не задумываешься, пока не почувствуешь, что не можешь полноценно жить и двигаться. " />
+    <meta name="yandex-verification" content="9c449c3a09bc553d" />
+}
+
+<div class="row">
+    <div class="col-lg-3">
+        <div class="panel panel-default" id="left">
+            @Html.Partial("~/Views/Shared/_TreePartial.cshtml")
+        </div>
+    </div>
+    <div class="col-lg-9">
+        <div class="panel panel-default" id="right">
+            <div id="loadcontent">
+                @Html.Partial("~/Views/Shared/LifeGo/_lifego.cshtml")
+            </div>
+        </div>
+    </div>
+</div>

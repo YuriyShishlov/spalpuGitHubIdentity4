@@ -1,22 +1,24 @@
 ﻿@{
-    ViewBag.Title = "СФА";
+    ViewBag.Title = "Лечебная физкультура";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section meta
 {
-    <meta name="description" content="Сайт Андрея Кривошеева" />
+    <meta name="description" content="Лечебная физкультура" />
     <meta name="yandex-verification" content="9c449c3a09bc553d" />
 }
+
 <div class="row">
     <div class="col-lg-3">
         <div class="panel panel-default" id="left">
-            @Html.Partial("_TreePartial")
+            @Html.Partial("~/Views/Shared/_TreePartial.cshtml")
         </div>
     </div>
     <div class="col-lg-9">
         <div class="panel panel-default" id="right">
             <div id="loadcontent">
-                @Html.Partial("LifeGo/_main")
+                @Html.Partial("~/Views/Shared/LifeGo/SPHA/_attachment.cshtml")
             </div>
         </div>
     </div>

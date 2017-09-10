@@ -16,4 +16,5 @@ namespace spalpuGitHubIdentity4.NewAjaxActionLink
             return MvcHtmlString.Create(lnk.ToString().Replace(repID, linkText));
         }
     }
+    
 }
