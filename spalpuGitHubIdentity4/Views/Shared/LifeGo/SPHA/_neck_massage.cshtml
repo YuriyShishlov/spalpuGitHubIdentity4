@@ -1,5 +1,5 @@
-﻿    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_abdominal_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back" })
-    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_conclusion" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "forward" })
+﻿    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_abdominal_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Lifego/Abdominal_massage", myTitle = "" })
+    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_conclusion" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Lifego/Conclusion", myTitle = "" })
 
     <h1>Массаж шеи</h1>
     <p><strong>При Проблемах с Шейным и Грудным отделом Позвоночника можно добавить несколько упражнений в <u>Положении Сидя</u>.</strong></p>
@@ -20,5 +20,5 @@
     <img src="~/Content/images/imagPublic/dubl/6_8.png"/>
     <p><strong>Заканчивается Массаж так называемыми &laquo;<em>Связывающими</em>&raquo; движениями, т.е. движениями которые <em>Связывают </em>Тело Пациента в Единое <u>Целое</u>, позволяют <em><u>Почувствовать</u> </em>его Целиком. Выполняются плавные, длинные, Оглаживающие Движения ладонями вдоль всего Тела, окончательно Расслабляя и <em>Успокаивая</em> Пациента.</strong></p>
 
-    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_abdominal_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "back" })
-    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_conclusion" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "forward" })
+    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_abdominal_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Lifego/Abdominal_massage", myTitle = "" })
+    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_conclusion" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Lifego/Conclusion", myTitle = "" })

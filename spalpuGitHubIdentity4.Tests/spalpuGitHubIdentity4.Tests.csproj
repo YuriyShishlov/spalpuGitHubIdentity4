@@ -59,6 +59,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\history.js\amplify.store.js" />
+    <Content Include="scripts\history.js\history.adapter.dojo.js" />
+    <Content Include="scripts\history.js\history.adapter.jquery.js" />
+    <Content Include="scripts\history.js\history.adapter.mootools.js" />
+    <Content Include="scripts\history.js\history.adapter.prototype.js" />
+    <Content Include="scripts\history.js\history.adapter.yui.js" />
+    <Content Include="scripts\history.js\history.adapter.zepto.js" />
+    <Content Include="scripts\history.js\history.html4.js" />
+    <Content Include="scripts\history.js\history.js" />
+    <Content Include="scripts\history.js\json2.js" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

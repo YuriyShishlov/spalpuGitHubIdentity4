@@ -1,5 +1,5 @@
-﻿    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period1" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back" })
-    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period3" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "forward" })
+﻿    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period1" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Lifego/Acute_period1", myTitle = "" })
+    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period3" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Lifego/Acute_period3", myTitle = "" })
 
     <h1>Специальные Упражнения, применяемые на  Втором Этапе Острого Периода.</h1>
     <img src="~/Content/images/imagPublic/attachment/1_begin_period/12.png" />
@@ -21,5 +21,5 @@
     <img src="~/Content/images/imagPublic/attachment/1_begin_period/20.png" />
     <p><strong>И.п. упор на коленях. <em>Сгибание </em>позвоночника (без прогибания при возвращении в И.п.!)</strong></p>
 
-    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period1" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "back" })
-    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period3" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "forward" })
+    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period1" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Lifego/Acute_period1", myTitle = "" })
+    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period3" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Lifego/Acute_period3", myTitle = "" })

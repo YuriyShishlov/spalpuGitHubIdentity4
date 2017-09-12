@@ -14,7 +14,9 @@ namespace IdentitySample
                         "~/Scripts/respond.js",
                         "~/Scripts/metisMenu.js",
                         "~/Scripts/up.js",
-                        "~/Scripts/startMenu.js"));
+                        "~/Scripts/startMenu.js",
+                        "~/Scripts/history.js/history.js",
+                        "~/Scripts/urlState.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));

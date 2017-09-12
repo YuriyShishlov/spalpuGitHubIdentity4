@@ -564,7 +564,18 @@
       <DependentUpon>bootstrap.css</DependentUpon>
     </Content>
     <Content Include="Scripts\EqualHeight.js" />
+    <Content Include="Scripts\history.js\amplify.store.js" />
+    <Content Include="Scripts\history.js\history.adapter.dojo.js" />
+    <Content Include="Scripts\history.js\history.adapter.jquery.js" />
+    <Content Include="Scripts\history.js\history.adapter.mootools.js" />
+    <Content Include="Scripts\history.js\history.adapter.prototype.js" />
+    <Content Include="Scripts\history.js\history.adapter.yui.js" />
+    <Content Include="Scripts\history.js\history.adapter.zepto.js" />
+    <Content Include="Scripts\history.js\history.html4.js" />
+    <Content Include="Scripts\history.js\history.js" />
+    <Content Include="Scripts\history.js\json2.js" />
     <Content Include="Scripts\startMenu.js" />
+    <Content Include="Scripts\urlState.js" />
     <Content Include="Views\Shared\_TreePartial.cshtml" />
     <Content Include="Views\Shared\_LoginPartial - Copy.cshtml" />
     <Content Include="Views\Shared\_LoginPartial - Copy - Copy.cshtml" />
@@ -640,6 +651,8 @@
     <Content Include="Views\Lifego\Special.cshtml" />
     <Content Include="Views\Lifego\Thai_massage.cshtml" />
     <Content Include="Views\Lifego\Whomysshtsy.cshtml" />
+    <Content Include="Views\Shared\AjaxOptionBottom.cshtml" />
+    <Content Include="App_Code\Helper.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
