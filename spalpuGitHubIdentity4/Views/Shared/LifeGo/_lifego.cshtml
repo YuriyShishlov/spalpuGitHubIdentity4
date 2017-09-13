@@ -1,6 +1,6 @@
 ﻿@RenderPage("~/Views/Shared/AjaxOptionBottom.cshtml")
-@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/_main" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs"  }, new { @class = "back", myUrl = "http://localhost:4632/", myTitle = "Главная" })
-@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Lifego/SmailPhilosophy", myTitle = "" })
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/_main" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs"  }, new { @class = "back", myUrl = "http://webmvc.ru/", myTitle = "Главная" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://webmvc.ru/Lifego/SmailPhilosophy", myTitle = "" })
 
 <h1>Жизнь - это Движение</h1>
 
@@ -11,8 +11,8 @@
 <p><strong>Неблагодарность попыток убедить отдельного человека&nbsp;&nbsp; (или все человечество в целом<em>)</em></strong><em> <strong>очевидна</strong></em><strong> (отсюда иногда возникает желание просто молча делать свое дело). Дело в том, что <em>мы все всё <u>знаем</u></em>. И, самое забавное, что это <em>действительно так</em>. Но от владения информацией до применения ее как руководства <em>к действию</em> дистанция огромного размера (читай м. Веллера &lsquo;все о жизни&rsquo;). Поэтому <em>психо</em>логические феномены оставим специалистам, скептики пусть брюзжат, а &hellip; &lsquo;караван идет&rsquo;.</strong></p>
 
 
-@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/_main" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/", myTitle = "" })
-@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Lifego/SmailPhilosophy", myTitle = "" })
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/_main" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://webmvc.ru/", myTitle = "" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://webmvc.ru/Lifego/SmailPhilosophy", myTitle = "" })
 
 
 @*<script type="text/javascript">
