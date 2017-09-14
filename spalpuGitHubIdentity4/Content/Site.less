@@ -3,8 +3,10 @@
 @font_color: #868585; //Цвет шрифта в body
 @font_color_white: #fff; //Цвет шрифта для темного фона
 @background_color: #fdfcfb; //Цвет фона body
+@fon_slider: #F0F8FF; 
+@background_wrap_colonok: #F0F8FF; //Цвет фона обертки двух колонок
 @background_first_col: #F8F8F8; //Цвет фона первой колонки
-@background_second_col: #F8F8F8; //Цвет фона первой колонки
+@background_second_col: #F8F8F8; //Цвет фона второй колонки
 @navbar_toggle_border_color: transparent; //Цвет border кнопки для мобильных
 @background_aside_active: #EEEEEE; /*Фон aside при наведениии*/
 @color_back_forward_hover: #eeeeee; /*Цвет шрифта наведенной ссылки(стрелок вперед, назад)*/
@@ -66,7 +68,7 @@ body a:active {
 }*/
 
 .fon_slider {
-    background-color: #D4D4D4;
+    background-color: @fon_slider;
 }
 
 .carousel-indicators li {
@@ -81,7 +83,7 @@ body a:active {
 
 /*Начало Обертки двух колонок*/
 #wrap {
-    background-color: aliceblue;
+    background-color: @background_wrap_colonok;
 }
 /*Конец Обертки двух колонок*/
 

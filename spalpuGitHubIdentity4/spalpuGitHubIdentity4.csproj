@@ -165,13 +165,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\spalpuGitHubIdentity4.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Data\spalpuGitHubIdentity4_log.ldf">
+    <Content Include="App_Data\spalpuGitHubIdentity4.ldf">
       <DependentUpon>spalpuGitHubIdentity4.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="App_Data\spalpuGitHubIdentity4.mdf" />
     <Content Include="Content\bootstrap - Copy.css" />
     <Content Include="Content\images\andr.jpg" />
     <Content Include="Content\images\favicon.ico" />
