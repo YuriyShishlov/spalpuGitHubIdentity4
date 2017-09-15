@@ -32,22 +32,23 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Главная", "Index", "Home", routeValues: null, htmlAttributes: new { @class="active_link" })</li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">СФА<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Система физической активности</a></li>
+                            <li><a href="#">Пункт 2</a></li>
+                            <li><a href="#">Пункт 3</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Пункт 4</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Пункт 5</a></li>
+                        </ul>
+                        </li>
+                        <li>@Html.ActionLink("Главная", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "active_link" })</li>
                         @*<li><a href="#">ЛПУ</a></li>*@
                         @*<li><a href="#">Видео</a></li>*@
                         <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
-                        @*<li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Разное<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Пункт 1</a></li>
-                                    <li><a href="#">Пункт 2</a></li>
-                                    <li><a href="#">Пункт 3</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Пункт 4</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Пункт 5</a></li>
-                                </ul>
-                            </li>*@
+
                         @if (Request.IsAuthenticated && User.IsInRole("Admin"))
                         {
                             <li>@Html.ActionLink("RolesAdmin", "Index", "RolesAdmin")</li>
@@ -90,12 +91,12 @@
                 </div>
 
                 @*<a class="left carousel-control" href="#my-carousel" data-slide="prev">*@
-                    @*Стрелка на слайдере влево*@
-                    @*<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>*@
+                @*Стрелка на слайдере влево*@
+                @*<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>*@
                 @*</a>
-                <a class="right carousel-control" href="#my-carousel" data-slide="next">*@
-                    @*Стрелка на слайдере вправо*@
-                    @*<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>*@
+                    <a class="right carousel-control" href="#my-carousel" data-slide="next">*@
+                @*Стрелка на слайдере вправо*@
+                @*<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>*@
                 @*</a>*@
             </div>
         </div>

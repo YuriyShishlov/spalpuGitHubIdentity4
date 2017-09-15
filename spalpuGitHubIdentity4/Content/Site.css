@@ -1,12 +1,4 @@
-﻿/*Начало Определяем переменные Less*/
-/*Фон aside при наведениии*/
-/*Цвет шрифта наведенной ссылки(стрелок вперед, назад)*/
-/*Цвет шрифта стрелок вперед, назад*/
-/*Цвет шрифта в article*/
-/*Цвет фона стрелок вперед, назад*/
-/*Конец Определяем переменные Less*/
-/*Начало Общие установки*/
-body {
+﻿body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #868585;
@@ -19,10 +11,7 @@ body a:visited,
 body a:link,
 body a:active {
   text-decoration: none;
-  /*Убрать подчеркивание у ссылок*/
 }
-/*Конец Общие установки*/
-/*Начало Навигационное меню*/
 .navbar {
   margin-bottom: 0;
 }
@@ -32,9 +21,7 @@ body a:active {
 }
 .navbar-brand img {
   width: 50px;
-  /*Размер логотипа*/
   height: 50px;
-  /*Размер логотипа*/
   position: relative;
   top: -15px;
 }
@@ -43,16 +30,8 @@ body a:active {
 }
 #bs-example-navbar-collapse-1 img {
   width: 20px;
-  /*Размеры иконок входа и регистрации*/
   height: 20px;
-  /*Размеры иконок входа и регистрации*/
 }
-/*Конец Навигационное меню*/
-/*Начало слайдер*/
-/*.fa{
-    position: relative;
-    top: 158px;
-}*/
 .fon_slider {
   background-color: #f0f8ff;
 }
@@ -63,20 +42,15 @@ body a:active {
 .item img {
   border-radius: 5px;
 }
-/*Конец слайдер*/
-/*Начало Обертки двух колонок*/
 #wrap {
   background-color: #f0f8ff;
 }
-/*Конец Обертки двух колонок*/
-/*Начало Первая колонка*/
 #left {
   background-color: #f8f8f8;
   padding: 0 10px;
   font-size: 16px;
+  color: #0d49a8;
 }
-/*Конец Первая колонка*/
-/*Начало Вторая колонка*/
 .imgPhoto {
   float: left;
   margin: 0 20px 0 20px;
@@ -85,8 +59,7 @@ body a:active {
 }
 #right {
   background-color: #f8f8f8;
-  color: #0d49a8;
-  /*padding: 0 20px;*/
+  color: #000000;
 }
 #right p {
   font-size: 20px;
@@ -105,7 +78,6 @@ body a:active {
 #right strong {
   font-weight: 100;
 }
-/*Выравнивание для главной страницы*/
 .p_andrei {
   margin-top: 32px !important;
   margin-left: 42px !important;
@@ -117,8 +89,6 @@ body a:active {
 .centeralign {
   text-align: center !important;
 }
-/*Конец Вторая колонка*/
-/*Начало Стрелки Вперед Назад*/
 #loadcontent {
   overflow: hidden;
 }
@@ -132,11 +102,6 @@ body a:active {
   text-align: center;
   line-height: 30px;
   font-weight: bold;
-  /*margin-bottom: 20px;*/
-  /*border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;*/
 }
 #loadcontent a.back {
   float: left;
@@ -150,8 +115,6 @@ body a:active {
 .first_back {
   visibility: hidden;
 }
-/*Конец Стрелки Вперед Назад*/
-/*Начало плагина metisMenu*/
 #menu {
   margin: 0;
   padding-left: 10px;
@@ -206,28 +169,23 @@ body a:active {
 .active > a > .fa.plus-minus:before {
   content: "\f068";
 }
-/*Конец плагина metisMenu*/
-/*Начало блока footer*/
 footer {
-  /*clear: both;
-    width: 100%;
-    height: 33px;
-    background-color: #c1c4c2;
-    border-radius: 0px 0px 20px 20px;
-    -moz-border-radius: 0px 0px 20px 20px;
-    -webkit-border-radius: 0px 0px 20px 20px;
-    -khtml-border-radius: 0px 0px 20px 20px;*/
+  width: 100%;
+  height: 33px;
+  background-color: #c1c4c2;
+  border-radius: 0px 0px 20px 20px;
+  -moz-border-radius: 0px 0px 20px 20px;
+  -webkit-border-radius: 0px 0px 20px 20px;
+  -khtml-border-radius: 0px 0px 20px 20px;
 }
 footer p {
   text-align: center;
   padding-top: 12px;
   color: #ffffff;
 }
-/*footer span {
-        font-family: Courier New, Courier, monospace;
-        font-size: 1.1em;
-        font-style: oblique;
-    }*/
-/*Было: <span>.vebner.ru</span>*/
-/*Конец блока footer*/
+footer span {
+  font-family: Courier New, Courier, monospace;
+  font-size: 1.1em;
+  font-style: oblique;
+}
 /*# sourceMappingURL=Site.css.map */

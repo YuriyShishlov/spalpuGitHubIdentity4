@@ -1,22 +1,25 @@
-﻿/*Начало Определяем переменные Less*/
+﻿//Начало Определяем переменные Less
+//ШРИФТЫ:
 @size: 18px; //Размер шрифта по умолчанию
 @font_color: #868585; //Цвет шрифта в body
 @font_color_white: #fff; //Цвет шрифта для темного фона
+@color_back_forward: #808080; //Цвет шрифта стрелок вперед, назад
+@color_font_aside: #0d49a8; //Цвет шрифта в первой колонке
+@color_font_article: #000000; //Цвет шрифта в article
+@color_back_forward_hover: #eeeeee; //Цвет шрифта наведенной ссылки(стрелок вперед, назад)
+//ЦВЕТА:
 @background_color: #fdfcfb; //Цвет фона body
-@fon_slider: #F0F8FF; 
+@fon_slider: #F0F8FF; //Цвет фона в слайдере
 @background_wrap_colonok: #F0F8FF; //Цвет фона обертки двух колонок
 @background_first_col: #F8F8F8; //Цвет фона первой колонки
 @background_second_col: #F8F8F8; //Цвет фона второй колонки
 @navbar_toggle_border_color: transparent; //Цвет border кнопки для мобильных
-@background_aside_active: #EEEEEE; /*Фон aside при наведениии*/
-@color_back_forward_hover: #eeeeee; /*Цвет шрифта наведенной ссылки(стрелок вперед, назад)*/
-@color_back_forward: #808080; /*Цвет шрифта стрелок вперед, назад*/
-@color_font_article: #0d49a8; /*Цвет шрифта в article*/
-@background_back_forward: #add1e5; /*Цвет фона стрелок вперед, назад*/
+@background_aside_active: #EEEEEE; //Фон aside при наведениии
+@background_back_forward: #add1e5; //Цвет фона стрелок вперед, назад
 
-/*Конец Определяем переменные Less*/
+//Конец Определяем переменные Less
 
-/*Начало Общие установки*/
+//Начало Общие установки
 body {
     font-family: 'Open Sans', sans-serif; //Шрифт поключен с fonts.google.com/
     font-size: @size - 2; //Размер шрифта
@@ -30,11 +33,11 @@ body a:hover,
 body a:visited,
 body a:link,
 body a:active {
-    text-decoration: none; /*Убрать подчеркивание у ссылок*/
+    text-decoration: none; //Убрать подчеркивание у ссылок
 }
-/*Конец Общие установки*/
+//Конец Общие установки
 
-/*Начало Навигационное меню*/
+//Начало Навигационное меню
 .navbar {
     margin-bottom: 0; //Обнуление установок bootstrap
 }
@@ -45,8 +48,8 @@ body a:active {
 }
 
 .navbar-brand img {
-    width: 50px; /*Размер логотипа*/
-    height: 50px; /*Размер логотипа*/
+    width: 50px; //Размер логотипа
+    height: 50px; //Размер логотипа
     position: relative; //Позиционирование относительное
     top: -15px; //Смещаем вверх
 }
@@ -56,16 +59,16 @@ body a:active {
 }
 
 #bs-example-navbar-collapse-1 img {
-    width: 20px; /*Размеры иконок входа и регистрации*/
-    height: 20px; /*Размеры иконок входа и регистрации*/
+    width: 20px; //Размеры иконок входа и регистрации
+    height: 20px; //Размеры иконок входа и регистрации
 }
-/*Конец Навигационное меню*/
+//Конец Навигационное меню
 
-/*Начало слайдер*/
-/*.fa{
-    position: relative;
-    top: 158px;
-}*/
+//Начало слайдер
+//.fa{
+//    position: relative;
+//    top: 158px;
+//}
 
 .fon_slider {
     background-color: @fon_slider;
@@ -79,23 +82,24 @@ body a:active {
 .item img {
     border-radius: 5px;
 }
-/*Конец слайдер*/
+//Конец слайдер
 
-/*Начало Обертки двух колонок*/
+//Начало Обертки двух колонок
 #wrap {
     background-color: @background_wrap_colonok;
 }
-/*Конец Обертки двух колонок*/
+//Конец Обертки двух колонок
 
-/*Начало Первая колонка*/
+//Начало Первая колонка
 #left {
     background-color: @background_first_col;
     padding: 0 10px;
     font-size: @size - 2px;
+    color: @color_font_aside; //Цвет шрифта в первой колонке
 }
-/*Конец Первая колонка*/
+//Конец Первая колонка
 
-/*Начало Вторая колонка*/
+//Начало Вторая колонка
 .imgPhoto {
     float: left;
     margin: 0 20px 0 20px;
@@ -106,7 +110,6 @@ body a:active {
 #right {
     background-color: @background_second_col; //Цвет фона
     color: @color_font_article; //Цвет шрифта
-    /*padding: 0 20px;*/ //Отступы справа и слева
 }
 
 #right p {
@@ -129,7 +132,7 @@ body a:active {
 #right strong {
     font-weight: 100; //Чтобы ослабить strong
 }
-/*Выравнивание для главной страницы*/
+//Выравнивание для главной страницы
 .p_andrei {
     margin-top: 32px !important;
     margin-left: 42px !important;
@@ -143,10 +146,10 @@ body a:active {
 .centeralign {
     text-align: center !important;
 }
-/*Конец Вторая колонка*/
+//Конец Вторая колонка
 
-/*Начало Стрелки Вперед Назад*/
-#loadcontent{
+//Начало Стрелки Вперед Назад
+#loadcontent {
     overflow: hidden;
 }
 
@@ -159,11 +162,11 @@ body a:active {
     text-align: center;
     line-height: 30px;
     font-weight: bold;
-    /*margin-bottom: 20px;*/
-    /*border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -khtml-border-radius: 10px;*/
+    //margin-bottom: 20px;
+    //border-radius: 10px;
+    //-moz-border-radius: 10px;
+    //-webkit-border-radius: 10px;
+    //-khtml-border-radius: 10px;
 }
 
 #loadcontent a.back {
@@ -181,9 +184,9 @@ body a:active {
 .first_back {
     visibility: hidden;
 }
-/*Конец Стрелки Вперед Назад*/
+//Конец Стрелки Вперед Назад
 
-/*Начало плагина metisMenu*/
+//Начало плагина metisMenu
 #menu {
     margin: 0;
     padding-left: 10px;
@@ -252,20 +255,20 @@ body a:active {
 .active > a > .fa.plus-minus:before {
     content: "\f068";
 }
-/*Конец плагина metisMenu*/
+//Конец плагина metisMenu
 
 
 
-/*Начало блока footer*/
+//Начало блока footer
 footer {
-    /*clear: both;
+    //clear: both;
     width: 100%;
     height: 33px;
     background-color: #c1c4c2;
     border-radius: 0px 0px 20px 20px;
     -moz-border-radius: 0px 0px 20px 20px;
     -webkit-border-radius: 0px 0px 20px 20px;
-    -khtml-border-radius: 0px 0px 20px 20px;*/
+    -khtml-border-radius: 0px 0px 20px 20px;
 }
 
 footer p {
@@ -274,10 +277,11 @@ footer p {
     color: @font_color_white; //Цвет шрифта
 }
 
-/*footer span {
-        font-family: Courier New, Courier, monospace;
-        font-size: 1.1em;
-        font-style: oblique;
-    }*/ /*Было: <span>.vebner.ru</span>*/
-/*Конец блока footer*/
+footer span {
+    font-family: Courier New, Courier, monospace;
+    font-size: 1.1em;
+    font-style: oblique;
+}
+//Было: <span>.vebner.ru</span>
+//Конец блока footer
 

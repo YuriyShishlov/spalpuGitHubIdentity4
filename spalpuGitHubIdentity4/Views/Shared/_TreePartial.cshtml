@@ -14,7 +14,7 @@
     @*<li class="active">*@
     <li>
         @Ajax.RawActionLink("Жизнь - это Движение <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/_lifego" }, ajaxopts, new { myUrl = "http://webmvc.ru/Lifego/LifeGo", myTitle = "" })
-        <ul>
+        <ul class="dropdown-menu">
             <li>@Ajax.ActionLink("Здоровье", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, ajaxopts, new { myUrl = "http://webmvc.ru/Lifego/SmailPhilosophy", myTitle = "" })</li>
             <li>@Ajax.ActionLink("Остеохондроз", "Index", "Home", new { strpage = "LifeGo/_osteochondrosis" }, ajaxopts, new { myUrl = "http://webmvc.ru/Lifego/Osteochondrosis", myTitle = "" })</li>
             <li>@Ajax.ActionLink("Наши Мышцы", "Index", "Home", new { strpage = "LifeGo/_mysshtsy" }, ajaxopts, new { myUrl = "http://webmvc.ru/Lifego/Mysshtsy", myTitle = "" })</li>
