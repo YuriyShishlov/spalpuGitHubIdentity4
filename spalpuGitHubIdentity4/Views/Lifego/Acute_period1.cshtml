@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Комплекс";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -9,12 +8,4 @@
     <meta name="description" content="Примерный Комплекс Лечебной Гимнастики, применяемый в Остром Периоде (Начальный Этап)" />
 }
 
-@section LeftBody
-{
-    @Html.Partial("_TreePartial")
-}
-
-@section RightBody
-{
-    @Html.Partial("~/Views/Home/LifeGo/SPHA/_acute_period1.cshtml")
-}
+@Html.Partial("~/Views/Home/LifeGo/SPHA/_acute_period1.cshtml")
