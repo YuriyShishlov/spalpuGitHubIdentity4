@@ -169,7 +169,6 @@
     <Content Include="App_Data\spalpuGitHubIdentity4_log.ldf">
       <DependentUpon>spalpuGitHubIdentity4.mdf</DependentUpon>
     </Content>
-    <Content Include="Content\bootstrap - Copy.css" />
     <Content Include="Content\images\andr.jpg" />
     <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\fon.png" />
@@ -541,6 +540,18 @@
     <Content Include="Content\less\variables.min.css">
       <DependentUpon>variables.css</DependentUpon>
     </Content>
+    <Content Include="Content\Site - Copy %282%29.css">
+      <DependentUpon>Site - Copy %282%29.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Site - Copy %282%29.min.css">
+      <DependentUpon>Site - Copy %282%29.css</DependentUpon>
+    </Content>
+    <Content Include="Content\SiteMobile.css">
+      <DependentUpon>SiteMobile.less</DependentUpon>
+    </Content>
+    <Content Include="Content\SiteMobile.min.css">
+      <DependentUpon>SiteMobile.css</DependentUpon>
+    </Content>
     <Content Include="Content\Site.css">
       <DependentUpon>Site.less</DependentUpon>
     </Content>
@@ -574,7 +585,10 @@
     <Content Include="Scripts\startMenu.js" />
     <Content Include="Scripts\urlState.js" />
     <Content Include="WebMyReadme\Замены\Адрес ссылки.html" />
+    <Content Include="WebMyReadme\Замены\Главная.html" />
     <Content Include="WebMyReadme\Замены\Первая колонка.html" />
+    <Content Include="WebMyReadme\Как сделать\Выравнивание_колонок.html" />
+    <Content Include="WebMyReadme\Удаленные\_LoginPartial.html" />
     <Content Include="WebMyReadme\Удаленные\_TreePartial.cshtml" />
     <Content Include="A\spalpuGitHubIdentity4.mdf_copy" />
     <Content Include="A\spalpuGitHubIdentity4_log.ldf_copy" />
@@ -609,11 +623,9 @@
     <Content Include="Views\Shared\LifeGo\SPHA\_special.cshtml" />
     <Content Include="Views\Shared\LifeGo\SPHA\_Thai_massage.cshtml" />
     <Content Include="WebMyReadme\Удаленные\Slider.html" />
-    <Content Include="WebMyReadme\WebMy.html" />
     <Content Include="WebMyReadme\База данных.html" />
     <Content Include="WebMyReadme\Как сделать\ВИДЕО.html" />
     <Content Include="WebMyReadme\Как сделать\Якорь на верх страницы.html" />
-    <Content Include="WebMyReadme\Недоработки.txt" />
     <Content Include="WebMyReadme\Порядок добавления статей.txt" />
     <Content Include="Views\Lifego\LifeGo.cshtml" />
     <Content Include="Views\Lifego\A.cshtml">
@@ -649,10 +661,19 @@
     <Content Include="Views\Lifego\Special.cshtml" />
     <Content Include="Views\Lifego\Thai_massage.cshtml" />
     <Content Include="Views\Lifego\Whomysshtsy.cshtml" />
-    <Content Include="Views\Shared\AjaxOptionBottom.cshtml" />
     <Content Include="App_Code\Helper.cshtml" />
     <Content Include="WebMyReadme\Удаленные\Первая колонка.html" />
+    <Content Include="Content\SiteMobile.css.map">
+      <DependentUpon>SiteMobile.css</DependentUpon>
+    </Content>
+    <Content Include="Content\SiteMobile.less" />
+    <Content Include="Content\Site - Copy %282%29.css.map">
+      <DependentUpon>Site - Copy %282%29.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Site - Copy %282%29.less" />
     <None Include="Properties\PublishProfiles\webmvc.pubxml" />
+    <Content Include="Views\Shared\_TreePartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -663,8 +684,6 @@
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\less\.csscomb.json" />
     <Content Include="Content\less\.csslintrc" />
     <Content Include="Content\less\alerts.less" />

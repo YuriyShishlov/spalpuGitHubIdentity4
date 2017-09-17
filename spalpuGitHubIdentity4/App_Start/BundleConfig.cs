@@ -12,7 +12,18 @@ namespace IdentitySample
                         "~/Scripts/jquery.unobtrusive-ajax.js",
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/respond.js",
-                        "~/Scripts/metisMenu.js",
+                        //"~/Scripts/metisMenu.js",
+                        "~/Scripts/up.js",
+                        "~/Scripts/startMenu.js",
+                        "~/Scripts/history.js/history.js",
+                        "~/Scripts/urlState.js"
+                        ));
+
+            bundles.Add(new ScriptBundle("~/bundles/mobilejquery").Include(
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.unobtrusive-ajax.js",
+                        "~/Scripts/bootstrap.js",
+                        "~/Scripts/respond.js",
                         "~/Scripts/up.js",
                         "~/Scripts/startMenu.js",
                         "~/Scripts/history.js/history.js",
@@ -28,7 +39,11 @@ namespace IdentitySample
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/less/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/mobilecss").Include(
+                      "~/Content/less/bootstrap.css",
+                      "~/Content/SiteMobile.css"));
         }
     }
 }

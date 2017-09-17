@@ -15,6 +15,10 @@ body a:active {
 .navbar {
   margin-bottom: 0;
 }
+.menu_heigh {
+  height: 410px;
+  overflow-y: scroll;
+}
 .dropdown-menu > li > a {
   color: #0d49a8;
 }
@@ -41,16 +45,11 @@ body a:active {
 .item img {
   border-radius: 5px;
 }
-#wrap {
-  overflow: hidden;
-}
 #left {
   background-color: #f8f8f8;
   padding: 0 10px;
   font-size: 16px;
   color: #0d49a8;
-  padding-bottom: 20000px;
-  margin-bottom: -20000px;
 }
 .imgPhoto {
   float: left;
@@ -61,8 +60,6 @@ body a:active {
 #right {
   background-color: #f8f8f8;
   color: #0d49a8;
-  padding-bottom: 20000px;
-  margin-bottom: -20000px;
 }
 #right p {
   font-size: 23px;
@@ -191,4 +188,4 @@ footer span {
   font-size: 1.1em;
   font-style: oblique;
 }
-/*# sourceMappingURL=Site.css.map */
+/*# sourceMappingURL=Site - Copy (2).css.map */

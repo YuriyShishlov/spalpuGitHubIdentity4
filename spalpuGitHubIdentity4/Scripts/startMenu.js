@@ -1,12 +1,12 @@
 ﻿//Запуск плагина меню
-$(function () {
+//$(function () {
 
-    $('#menu').metisMenu();
+//    $('#menu').metisMenu();
 
-    $('#menu2').metisMenu({
-        toggle: false
-    });
-});
+//    $('#menu2').metisMenu({
+//        toggle: false
+//    });
+//});
 
 //Жизнь - это движение
 //Чтобы сворачивалось
