@@ -26,8 +26,8 @@ body {
     font-size: @size - 2; //Размер шрифта
     color: @font_color; //Цвет шрифта
     font-weight: normal; //Вес шрифта
-//    background: url(images/page.jpg); //Общий фон на странице
-//    background-attachment: fixed; //Фиксация фона
+    //    background: url(images/page.jpg); //Общий фон на странице
+    //    background-attachment: fixed; //Фиксация фона
     background-color: @background_color; //Цвет фона body
 }
 
@@ -38,7 +38,27 @@ body a:link,
 body a:active {
     text-decoration: none; //Убрать подчеркивание у ссылок
 }
+
+//Убрать желтый фон в хроме
+input {
+    outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
+    -webkit-text-fill-color: #000 !important; /* цвет текста */
+    color: #000 !important; /* цвет текста */
+}
+
+
 //Конец Общие установки
+
+//Начало Модальное окно
+.sign_in {
+    width: 250px;
+    height: auto;
+}
+//Конец Модальное окно
 
 //Начало Навигационное меню
 .navbar {
@@ -50,7 +70,7 @@ body a:active {
     //overflow-y: scroll;//прокрутка
 }
 
-.dropdown-menu > li > a{
+.dropdown-menu > li > a {
     color: @font_color;
 }
 
@@ -101,8 +121,8 @@ body a:active {
 //Конец слайдер
 
 //Начало Обертки двух колонок
-#wrap{
-    overflow: hidden;  //чтобы лишее обрезалось 
+#wrap {
+    overflow: hidden; //чтобы лишее обрезалось
 }
 //Конец Обертки двух колонок
 
@@ -112,8 +132,8 @@ body a:active {
     padding: 0 10px;
     font-size: @size - 2px;
     color: @color_font_aside; //Цвет шрифта в первой колонке
-    padding-bottom: 20000px;//Для выравнивания колонок
-    margin-bottom: -20000px;//Для выравнивания колонок
+    padding-bottom: 20000px; //Для выравнивания колонок
+    margin-bottom: -20000px; //Для выравнивания колонок
 }
 //Конец Первая колонка
 
@@ -128,8 +148,8 @@ body a:active {
 #right {
     background-color: @background_second_col; //Цвет фона
     color: @color_font_article; //Цвет шрифта
-    padding-bottom: 20000px;//Для выравнивания колонок
-    margin-bottom: -20000px;//Для выравнивания колонок
+    padding-bottom: 20000px; //Для выравнивания колонок
+    margin-bottom: -20000px; //Для выравнивания колонок
 }
 
 #right p {
@@ -301,7 +321,6 @@ footer span {
     font-family: Courier New, Courier, monospace;
     font-size: 1.1em;
     font-style: oblique;
-    
 }
 //Было: <span>.vebner.ru</span>
 //Конец блока footer

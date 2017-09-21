@@ -588,6 +588,7 @@
     <Content Include="WebMyReadme\Замены\Главная.html" />
     <Content Include="WebMyReadme\Замены\Первая колонка.html" />
     <Content Include="WebMyReadme\Как сделать\Выравнивание_колонок.html" />
+    <Content Include="WebMyReadme\Как сделать\Желтый _фон.html" />
     <Content Include="WebMyReadme\Удаленные\_LoginPartial.html" />
     <Content Include="WebMyReadme\Удаленные\_TreePartial.cshtml" />
     <Content Include="A\spalpuGitHubIdentity4.mdf_copy" />
@@ -674,6 +675,7 @@
     <None Include="Properties\PublishProfiles\webmvc.pubxml" />
     <Content Include="Views\Shared\_TreePartial.cshtml" />
     <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
+    <Content Include="Views\Shared\_Pop_up.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
