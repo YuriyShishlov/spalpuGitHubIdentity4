@@ -111,4 +111,10 @@ namespace IdentitySample.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
+
+    public class RegisterLoginViewModel
+    {
+        public RegisterViewModel RegModel { get; set; }
+        public LoginViewModel LogModel { get; set; }
+    }
 }

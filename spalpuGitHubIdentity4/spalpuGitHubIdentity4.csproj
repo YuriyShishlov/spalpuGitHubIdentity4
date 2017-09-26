@@ -540,12 +540,6 @@
     <Content Include="Content\less\variables.min.css">
       <DependentUpon>variables.css</DependentUpon>
     </Content>
-    <Content Include="Content\Site - Copy %282%29.css">
-      <DependentUpon>Site - Copy %282%29.less</DependentUpon>
-    </Content>
-    <Content Include="Content\Site - Copy %282%29.min.css">
-      <DependentUpon>Site - Copy %282%29.css</DependentUpon>
-    </Content>
     <Content Include="Content\SiteMobile.css">
       <DependentUpon>SiteMobile.less</DependentUpon>
     </Content>
@@ -571,6 +565,7 @@
     <Content Include="Content\less\bootstrap.css.map">
       <DependentUpon>bootstrap.css</DependentUpon>
     </Content>
+    <Content Include="Scripts\close_modal.js" />
     <Content Include="Scripts\EqualHeight.js" />
     <Content Include="Scripts\history.js\amplify.store.js" />
     <Content Include="Scripts\history.js\history.adapter.dojo.js" />
@@ -668,14 +663,12 @@
       <DependentUpon>SiteMobile.css</DependentUpon>
     </Content>
     <Content Include="Content\SiteMobile.less" />
-    <Content Include="Content\Site - Copy %282%29.css.map">
-      <DependentUpon>Site - Copy %282%29.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Site - Copy %282%29.less" />
     <None Include="Properties\PublishProfiles\webmvc.pubxml" />
     <Content Include="Views\Shared\_TreePartial.cshtml" />
     <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
     <Content Include="Views\Shared\_Pop_up.cshtml" />
+    <Content Include="Views\Shared\_LayoutPageAdmin.cshtml" />
+    <Content Include="Views\Shared\_login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

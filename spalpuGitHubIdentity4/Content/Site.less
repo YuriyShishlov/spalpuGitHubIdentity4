@@ -17,6 +17,10 @@
 @navbar_toggle_border_color: transparent; //Цвет border кнопки для мобильных
 @background_aside_active: #EEEEEE; //Фон aside при наведениии
 @background_back_forward: #add1e5; //Цвет фона стрелок вперед, назад
+@background_modal: #fff; //Цвет фона модального окна
+@background_modal_button: #428BCA; //Цвет кнопки Вход модального окна
+@background_modal_button_hover: #0d49a8; //#1531ba При наведении
+
 
 //Конец Определяем переменные Less
 
@@ -53,13 +57,6 @@ input:-webkit-autofill {
 
 //Конец Общие установки
 
-//Начало Модальное окно
-.sign_in {
-    width: 250px;
-    height: auto;
-}
-//Конец Модальное окно
-
 //Начало Навигационное меню
 .navbar {
     margin-bottom: 0; //Обнуление установок bootstrap
@@ -95,6 +92,163 @@ input:-webkit-autofill {
 //   height: 20px; //Размеры иконок входа и регистрации
 //}
 //Конец Навигационное меню
+
+//Начало Модальное окно
+.sign_in {
+    width: 530px;
+    margin: 287px auto 0;
+    background-color: @background_modal;
+    border-radius: 6px;
+    padding: 0 15px 0;
+    overflow: hidden;
+
+    hr {
+        border-top: none;
+    }
+
+    h4 {
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.1;
+        color: #1b1f23;
+        font-size: 22px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .begin_form {
+        padding: 10px;
+    }
+
+    .checkbox input[type="checkbox"] {
+        margin-left: 0;
+        margin-top: 7px;
+    }
+}
+
+#myModal {
+    height: 380px; //337px
+}
+
+#myModalReg {
+    height: 530px; 
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 6px 12px;
+    font-size: 18px;
+    line-height: 1.42857;
+    color: #696f6f;
+    background-color: white;
+    background-image: none;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-success {
+    color: white;
+    background-color: @background_modal_button;
+    border-color: @background_modal_button;
+}
+
+.btn-success:hover {
+    color: white;
+    background-color: @background_modal_button_hover;
+    border-color: @background_modal_button_hover;
+}
+
+.btn-success:visited {
+    color: white;
+    background-color: @background_modal_button_hover;
+    border-color: @background_modal_button_hover;
+}
+
+.btn-success:active {
+    color: white;
+    background-color: @background_modal_button_hover;
+    border-color: @background_modal_button_hover;
+}
+
+.btn-success:focus {
+    color: white;
+    background-color: @background_modal_button_hover;
+    border-color: @background_modal_button_hover;
+}
+
+.btn-success:link {
+    color: white;
+    background-color: @background_modal_button_hover;
+    border-color: @background_modal_button_hover;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 0;
+    white-space: nowrap;
+    padding: 10px 23px;
+    font-size: 18px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.reg_fogot {
+    overflow: hidden; //Потому что внутри блока есть float
+}
+
+//Чтобы раздвинуть Регистрация и Забыли пароль?
+.registr_left {
+    float: left;
+    margin-left: 14px;
+}
+
+.forgot_right {
+    float: right;
+    margin-right: 14px;
+}
+
+.close {
+    position: relative;
+    top: 10px;
+    right: 7px;
+    font-size: 30px;
+}
+
+#load_gif {
+    display: none;
+}
+
+#myModalReg {
+}
+//Конец Модальное окно
+
 
 //Начало слайдер
 //.fa{

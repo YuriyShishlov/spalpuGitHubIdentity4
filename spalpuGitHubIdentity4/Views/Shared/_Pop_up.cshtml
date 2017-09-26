@@ -1,41 +1,77 @@
-﻿@model IdentitySample.Models.LoginViewModel
+﻿@model IdentitySample.Models.RegisterLoginViewModel
 
-<section class="sign_in">
-    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-    { @Html.AntiForgeryToken()  <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @*<div class="form-group">*@
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-            @*</div>*@
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-            <div class="col-md-10">
-                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+<div id="myModal" class="sign_in row modal" tabindex="-1" role="dialog">
+    <span class="close" data-dismiss="modal">&times;</span>
+    <div class="col-md-12">
+        <h4 class="text-center">Личный кабинет</h4>
+
+        @*@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))*@
+        @using (Ajax.BeginForm("Login", "Account", null, new AjaxOptions() { UpdateTargetId = "myModal", LoadingElementId = "load_gif", LoadingElementDuration = 400, InsertionMode = InsertionMode.Replace, HttpMethod = "POST" }, new { @class = "begin_form", role = "form" }))
+        {
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.LogModel.Email, new { @class = "form-control", placeholder = "Email" })
+                @Html.ValidationMessageFor(m => m.LogModel.Email, "", new { @class = "text-danger" })
             </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <div class="checkbox">
-                    @Html.CheckBoxFor(m => m.RememberMe)
-                    @Html.LabelFor(m => m.RememberMe)
-                </div>
+
+            <div class="form-group">
+                @Html.PasswordFor(m => m.LogModel.Password, new { @class = "form-control", placeholder = "Пароль" })
+                @Html.ValidationMessageFor(m => m.LogModel.Password, "", new { @class = "text-danger" })
             </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Вход" class="btn btn-default" />
+
+            <div class="form-group">
+                <input type="submit" value="Добро пожаловать" class="btn btn-success btn-block " />
             </div>
-        </div>
-        <p>
-            @Html.ActionLink("Регистация", "Register")
-        </p>
-        <p>
-            @Html.ActionLink("Забыли пароль?", "ForgotPassword")
-        </p>
-    }
-</section>
+
+            @Html.AntiForgeryToken()  <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div id="load_gif" class="text-center"><img src="~/Content/img/805.gif" /></div>
+
+            @*<section class="text-center">
+                    <div class="checkbox">
+                        @Html.CheckBoxFor(m => m.RememberMe)
+                        @Html.LabelFor(m => m.RememberMe)
+                    </div>
+                </section>*@
+
+
+        }
+        <section class="reg_fogot">
+            @*<p>@Html.ActionLink("Регистрация", "Register", "Account", null, new { @class = "registr_left" })      @Html.ActionLink("Забыли пароль?", "ForgotPassword", "Account", null, new { @class = "forgot_right" })</p>*@
+            <p><a href="#" class="registr_left" data-dismiss="modal" data-toggle="modal" data-target="#myModalReg">Регистрация</a><a href="#" class="forgot_right" data-toggle="modal" data-target="#myModalFogot">Забыли пароль?</a></p>
+        </section>
+    </div>
+</div>
+
+<div id="myModalReg" class="sign_in row modal" tabindex="-1" role="dialog">
+    <span class="close" data-dismiss="modal">&times;</span>
+    <div class="col-md-12">
+        <h4 class="text-center">Регистрация</h4>
+        @*@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))*@
+        @using (Ajax.BeginForm("Login", "Account", null, new AjaxOptions() { UpdateTargetId = "myModal", LoadingElementId = "load_gif", LoadingElementDuration = 400, InsertionMode = InsertionMode.Replace, HttpMethod = "POST" }, new { @class = "begin_form", role = "form" }))
+        {
+
+
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.RegModel.NameDisplay, new { @class = "form-control", placeholder = "Отображаемое имя" })
+            </div>
+
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.RegModel.Email, new { @class = "form-control", placeholder = "Email" })
+            </div>
+
+            <div class="form-group">
+                @Html.PasswordFor(m => m.RegModel.Password, new { @class = "form-control", placeholder = "Пароль" })
+            </div>
+            <div class="form-group">
+                @Html.PasswordFor(m => m.RegModel.ConfirmPassword, new { @class = "form-control", placeholder = "Подтверждение пароля" })
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Регистрация" class="btn btn-success btn-block " />
+            </div>
+            @Html.AntiForgeryToken()<hr />
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+        }
+    </div>
+</div>
