@@ -1,0 +1,69 @@
+﻿@model IdentitySample.Models.RegisterViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+    <link href="~/Content/less/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            -webkit-font-smoothing: antialiased; /*чтобы на мобильных даже при увеличении шрифт был гладким*/
+            -webkit-overflow-scrolling: touch; /*чтобы на мобильных можно было проскролить*/
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal">Показать всплывающее окно</button>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModal-label">Регистрация</h4>
+                </div>
+                <div class="modal-body modal_body_padding_bottom">
+                    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.NameDisplay)
+                            @Html.TextBoxFor(m => m.NameDisplay, new { @class = "form-control", placeholder = "Введите Ник" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Email)
+                            @Html.PasswordFor(m => m.Email, new { @class = "form-control", placeholder = "Введите email", type = "email" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Password)
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Введите пароль", type = "password" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.ConfirmPassword)
+                            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", placeholder = "Подтвердите пароль", type = "password" })
+                            @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                        </div>
+
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <input type="submit" value="Регистрация" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

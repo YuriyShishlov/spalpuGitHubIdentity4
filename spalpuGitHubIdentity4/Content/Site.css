@@ -27,6 +27,23 @@ input:-webkit-autofill {
   width: 250px;
   height: auto;
 }
+.padding_null {
+  padding-left: 0;
+  padding-right: 0;
+}
+.modal_body_padding_bottom {
+  padding-bottom: 0;
+}
+.modal-backdrop {
+  background-color: #add1e5;
+  opacity: 0,7;
+}
+.margin_register_forgot {
+  margin-bottom: 52px;
+}
+.form-group a {
+  color: #ff6a00;
+}
 .navbar {
   margin-bottom: 0;
 }
@@ -80,7 +97,7 @@ input:-webkit-autofill {
   margin-bottom: -20000px;
 }
 #right p {
-  font-size: 23px;
+  font-size: 22px;
   text-align: justify;
   text-indent: 37px;
   margin: 0 20px 10px 20px;
