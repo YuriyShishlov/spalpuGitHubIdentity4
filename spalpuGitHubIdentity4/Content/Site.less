@@ -4,12 +4,12 @@
 @font_color: #0d49a8; //Цвет шрифта в body
 @font_color_white: #fff; //Цвет шрифта для темного фона
 @color_back_forward: #808080; //Цвет шрифта стрелок вперед, назад
-@color_font_aside: #0d49a8; //Цвет шрифта в первой колонке
-@color_font_article: #0d49a8; //Цвет шрифта в article
+@color_font_aside: #002ee6; //Цвет шрифта в первой колонке
+@color_font_article: #002ee6; //Цвет шрифта в article
 @color_back_forward_hover: #eeeeee; //Цвет шрифта наведенной ссылки(стрелок вперед, назад)
 //ЦВЕТА:
 //@background_color: #fdfcfb; //Цвет фона body
-@background_color: #EDE7CF; //Цвет фона body
+@background_color: #CCDAD5; //Цвет фона body
 @fon_slider: #F0F8FF; //Цвет фона в слайдере
 @background_wrap_colonok: #F0F8FF; //Цвет фона обертки двух колонок
 @background_first_col: #F8F8F8; //Цвет фона первой колонки
@@ -64,6 +64,10 @@ input:-webkit-autofill {
     padding-right: 0;
 }
 
+modal_body_padding_bottom_login{
+    padding-bottom: 50px;
+}
+
 .modal_body_padding_bottom {
     padding-bottom: 0;
 }
@@ -77,9 +81,6 @@ input:-webkit-autofill {
     margin-bottom: 52px;
 }
 
-.form-group a{
-    color: #ff6a00;
-}
 //Конец Модальное окно
 
 //Начало Навигационное меню
@@ -153,9 +154,12 @@ input:-webkit-autofill {
     background-color: @background_first_col;
     padding: 0 10px;
     font-size: @size - 2px;
-    color: @color_font_aside; //Цвет шрифта в первой колонке
     padding-bottom: 20000px; //Для выравнивания колонок
     margin-bottom: -20000px; //Для выравнивания колонок
+}
+
+#left a{
+    color: @color_font_aside; //Цвет шрифта в первой колонке
 }
 //Конец Первая колонка
 
@@ -175,7 +179,7 @@ input:-webkit-autofill {
 }
 
 #right p {
-    font-size: @size + 4px; //Размер шрифта
+    font-size: @size + 2px; //Размер шрифта
     text-align: justify; //Выравнивание текста с двух сторон
     text-indent: 37px; //Отступ первой строки в параграфе
     margin: 0 20px 10px 20px; //Отступы
@@ -193,6 +197,10 @@ input:-webkit-autofill {
 
 #right strong {
     font-weight: 100; //Чтобы ослабить strong
+}
+
+.panel{
+    border: 0 solid transparent;//Чтобы убрать белые полоски
 }
 
 //Выравнивание для главной страницы

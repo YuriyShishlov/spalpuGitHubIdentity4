@@ -47,6 +47,13 @@ namespace IdentitySample.Controllers
             return View();
         }
 
+        //[AllowAnonymous]
+        //public ActionResult LoginModal(string returnUrl)
+        //{
+        //    ViewBag.ReturnUrl = returnUrl;
+        //    return PartialView();
+        //}
+
         private ApplicationSignInManager _signInManager;
 
         public ApplicationSignInManager SignInManager
@@ -63,8 +70,9 @@ namespace IdentitySample.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
+        public async Task<ActionResult> Login(RegisterLoginViewModel model, string returnUrl, string strpage = "_login")
         {
+
             //время блокировки
             //UserManager.DefaultAccountLockoutTimeSpan = TimeSpan.FromHours(1);
             //количество попыток, если 5, то на пятую "неправильную" блокирует
@@ -87,13 +95,17 @@ namespace IdentitySample.Controllers
             //}
             if (ModelState.IsValid)
             {
-                var user = await UserManager.FindAsync(model.Email, model.Password);
+                var user = await UserManager.FindAsync(model.LogModel.Email, model.LogModel.Password);
                 if (user != null)
                 {
                     if (user.EmailConfirmed == true)
                     {
-                        await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-                        return RedirectToLocal(returnUrl);
+                        //await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: true);
+                        var result = await SignInManager.PasswordSignInAsync(model.LogModel.Email, model.LogModel.Password, model.LogModel.RememberMe, shouldLockout: false);
+                        //return RedirectToLocal(returnUrl);
+                        //return Redirect("/Home/Index");
+                        //return JavaScript("window.location='/Home/Index'");
+                        return JavaScript("location.reload(true)");
                     }
                     else
                     {
@@ -105,9 +117,13 @@ namespace IdentitySample.Controllers
                     ModelState.AddModelError("", "Неверный логин или пароль");
                 }
             }
-            return View(model);
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView(strpage, model);
+            }
+            return JavaScript("window.location='/Home/Index'");
 
-            
+
         }
 
         //
@@ -162,6 +178,13 @@ namespace IdentitySample.Controllers
             return View();
         }
 
+        [AllowAnonymous]
+        public ActionResult RegisterModal(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return PartialView();
+        }
+
         //
         // POST: /Account/Register
         [HttpPost]
@@ -171,7 +194,7 @@ namespace IdentitySample.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, DateCreate = DateTime.Now, NameDisplay = model.NameDisplay};
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, DateCreate = DateTime.Now, NameDisplay = model.NameDisplay, };
                 IdentityResult result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

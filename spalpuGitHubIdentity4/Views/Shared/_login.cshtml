@@ -1,0 +1,37 @@
+﻿@model IdentitySample.Models.LoginViewModel
+
+<span class="close" data-dismiss="modal">&times;</span>
+<div class="col-md-12">
+    <h4 class="text-center">Личный кабинет</h4>
+    @using (Ajax.BeginForm("Login", "Account", new AjaxOptions() { UpdateTargetId = "myModal", InsertionMode = InsertionMode.Replace, HttpMethod = "POST" }, new { @class = "begin_form", role = "form" }))
+    {
+        <div class="form-group">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Пароль" })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Добро пожаловать" class="btn btn-success btn-block" />
+        </div>
+
+        @Html.AntiForgeryToken()  <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @*<section class="text-center">
+                <div class="checkbox">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe)
+                </div>
+            </section>*@
+
+        <section class="reg_fogot">
+            <p>@Html.ActionLink("Регистрация", "Register", null, new { @class = "registr_left" })      @Html.ActionLink("Забыли пароль?", "ForgotPassword", null, new { @class = "forgot_right" })</p>
+        </section>
+    }
+</div>
+

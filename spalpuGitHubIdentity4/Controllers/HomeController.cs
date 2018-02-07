@@ -54,5 +54,6 @@ namespace IdentitySample.Controllers
         {
             return View();
         }
+
     }
 }

@@ -3,7 +3,7 @@
   font-size: 16px;
   color: #0d49a8;
   font-weight: normal;
-  background-color: #ede7cf;
+  background-color: #ccdad5;
 }
 body a,
 body a:hover,
@@ -31,6 +31,9 @@ input:-webkit-autofill {
   padding-left: 0;
   padding-right: 0;
 }
+modal_body_padding_bottom_login {
+  padding-bottom: 50px;
+}
 .modal_body_padding_bottom {
   padding-bottom: 0;
 }
@@ -40,9 +43,6 @@ input:-webkit-autofill {
 }
 .margin_register_forgot {
   margin-bottom: 52px;
-}
-.form-group a {
-  color: #ff6a00;
 }
 .navbar {
   margin-bottom: 0;
@@ -80,9 +80,11 @@ input:-webkit-autofill {
   background-color: #f8f8f8;
   padding: 0 10px;
   font-size: 16px;
-  color: #0d49a8;
   padding-bottom: 20000px;
   margin-bottom: -20000px;
+}
+#left a {
+  color: #002ee6;
 }
 .imgPhoto {
   float: left;
@@ -92,12 +94,12 @@ input:-webkit-autofill {
 }
 #right {
   background-color: #f8f8f8;
-  color: #0d49a8;
+  color: #002ee6;
   padding-bottom: 20000px;
   margin-bottom: -20000px;
 }
 #right p {
-  font-size: 22px;
+  font-size: 20px;
   text-align: justify;
   text-indent: 37px;
   margin: 0 20px 10px 20px;
@@ -112,6 +114,9 @@ input:-webkit-autofill {
 }
 #right strong {
   font-weight: 100;
+}
+.panel {
+  border: 0 solid transparent;
 }
 .p_andrei {
   margin-top: 32px !important;

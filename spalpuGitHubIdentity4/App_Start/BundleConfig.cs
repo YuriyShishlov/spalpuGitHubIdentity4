@@ -9,6 +9,7 @@ namespace IdentitySample
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.validate*",
                         "~/Scripts/jquery.unobtrusive-ajax.js",
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/respond.js",
@@ -16,7 +17,8 @@ namespace IdentitySample
                         "~/Scripts/up.js",
                         "~/Scripts/startMenu.js",
                         "~/Scripts/history.js/history.js",
-                        "~/Scripts/urlState.js"
+                        "~/Scripts/urlState.js",
+                        "~/Scripts/close_modal.js"
                         ));
 
             bundles.Add(new ScriptBundle("~/bundles/mobilejquery").Include(
@@ -29,8 +31,8 @@ namespace IdentitySample
                         "~/Scripts/history.js/history.js",
                         "~/Scripts/urlState.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+            //bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+            //            "~/Scripts/jquery.validate*"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.

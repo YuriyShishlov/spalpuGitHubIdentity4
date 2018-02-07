@@ -573,6 +573,7 @@
     <Content Include="Content\less\bootstrap.css.map">
       <DependentUpon>bootstrap.css</DependentUpon>
     </Content>
+    <Content Include="Scripts\close_modal.js" />
     <Content Include="Scripts\EqualHeight.js" />
     <Content Include="Scripts\history.js\amplify.store.js" />
     <Content Include="Scripts\history.js\history.adapter.dojo.js" />
@@ -586,6 +587,7 @@
     <Content Include="Scripts\history.js\json2.js" />
     <Content Include="Scripts\startMenu.js" />
     <Content Include="Scripts\urlState.js" />
+    <Content Include="Views\Shared\_Pop_up_Copy.html" />
     <Content Include="WebMyReadme\Замены\Адрес ссылки.html" />
     <Content Include="WebMyReadme\Замены\Главная.html" />
     <Content Include="WebMyReadme\Замены\Первая колонка.html" />
@@ -687,6 +689,8 @@
     <Content Include="Views\Home\ConfirmEmailTest.cshtml" />
     <Content Include="Views\Home\DisplayEmailTest.cshtml" />
     <Content Include="Views\Home\ForgotPasswordConfirmationTest.cshtml" />
+    <Content Include="Views\Account\LoginModal.cshtml" />
+    <Content Include="Views\Account\RegisterModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -4,7 +4,7 @@
 @if (Request.IsAuthenticated)
 {
     var identity = (ClaimsIdentity)User.Identity;
-    var name = identity.FindFirstValue(ClaimTypes.GivenName)?? identity.GetUserName();
+    var name = identity.FindFirstValue(ClaimTypes.GivenName) ?? identity.GetUserName();
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
         @Html.AntiForgeryToken()
@@ -20,6 +20,7 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Личный кабинет", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        @*<li>@Html.ActionLink("Личный кабинет", "LoginModal", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", data_toggle = "modal", data_target = "#myModalLogin" })</li>*@
+        <li><a href="#" data-toggle="modal" data-target="#myModalLogin">Личный кабинет</a></li>
     </ul>
 }
