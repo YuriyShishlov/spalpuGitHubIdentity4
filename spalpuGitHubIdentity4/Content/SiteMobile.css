@@ -1,6 +1,6 @@
 ﻿body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   color: #0d49a8;
   font-weight: normal;
   background-color: #ede7cf;
@@ -44,7 +44,7 @@ body a:active {
 #left {
   background-color: #f8f8f8;
   padding: 0 10px;
-  font-size: 16px;
+  font-size: 17px;
   color: #0d49a8;
 }
 .imgPhoto {
@@ -58,18 +58,19 @@ body a:active {
   color: #0d49a8;
 }
 #right p {
-  font-size: 23px;
+  font-size: 17px;
   text-align: justify;
-  text-indent: 37px;
+  text-indent: 18px;
   margin: 0 20px 10px 20px;
 }
 #right h1 {
   margin: 59px 0 30px 35px;
-  font-size: 28px;
+  font-size: 27px;
 }
 #right h2 {
   margin: 29px 0 24px 20px;
   padding: 0;
+  font-size: 22px;
 }
 #right strong {
   font-weight: 100;

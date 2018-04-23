@@ -13,13 +13,13 @@ namespace IdentitySample
                         "~/Scripts/jquery.unobtrusive-ajax.js",
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/respond.js",
-                        //"~/Scripts/metisMenu.js",
                         "~/Scripts/up.js",
                         "~/Scripts/startMenu.js",
                         "~/Scripts/history.js/history.js",
                         "~/Scripts/urlState.js",
                         "~/Scripts/close_modal.js"
                         ));
+                        //"~/Scripts/metisMenu.js"
 
             bundles.Add(new ScriptBundle("~/bundles/mobilejquery").Include(
                         "~/Scripts/jquery-{version}.js",

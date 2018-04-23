@@ -1,4 +1,5 @@
 ﻿using IdentitySample.Models;
+using System;
 using System.Data.Entity;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -18,5 +19,7 @@ namespace IdentitySample
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        
+
     }
 }

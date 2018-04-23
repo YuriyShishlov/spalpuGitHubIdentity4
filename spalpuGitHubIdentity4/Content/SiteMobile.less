@@ -1,6 +1,6 @@
 ﻿//Начало Определяем переменные Less
 //ШРИФТЫ:
-@size: 18px; //Размер шрифта по умолчанию
+@size: 17px; //Размер шрифта по умолчанию
 @font_color: #0d49a8; //Цвет шрифта в body
 @font_color_white: #fff; //Цвет шрифта для темного фона
 @color_back_forward: #808080; //Цвет шрифта стрелок вперед, назад
@@ -23,7 +23,7 @@
 //Начало Общие установки
 body {
     font-family: 'Open Sans', sans-serif; //Шрифт поключен с fonts.google.com/
-    font-size: @size - 2; //Размер шрифта
+    font-size: @size; //Размер шрифта
     color: @font_color; //Цвет шрифта
     font-weight: normal; //Вес шрифта
 //    background: url(images/page.jpg); //Общий фон на странице
@@ -103,7 +103,7 @@ body a:active {
 #left {
     background-color: @background_first_col;
     padding: 0 10px;
-    font-size: @size - 2px;
+    font-size: @size;
     color: @color_font_aside; //Цвет шрифта в первой колонке
 }
 //Конец Первая колонка
@@ -122,20 +122,21 @@ body a:active {
 }
 
 #right p {
-    font-size: @size + 5px; //Размер шрифта
+    font-size: @size; //Размер шрифта
     text-align: justify; //Выравнивание текста с двух сторон
-    text-indent: 37px; //Отступ первой строки в параграфе
+    text-indent: 18px; //Отступ первой строки в параграфе
     margin: 0 20px 10px 20px; //Отступы
 }
 
 #right h1 {
     margin: 59px 0 30px 35px;
-    font-size: @size + 10px;
+    font-size: @size + 10px; //Размер шрифта
 }
 
 #right h2 {
     margin: 29px 0 24px 20px;
     padding: 0;
+    font-size: @size + 5px; //Размер шрифта
 }
 
 #right strong {

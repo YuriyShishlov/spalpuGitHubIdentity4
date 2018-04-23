@@ -15,8 +15,7 @@
     <AssemblyName>spalpuGitHubIdentity4</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort>
-    </IISExpressSSLPort>
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -526,7 +525,6 @@
     <Content Include="Content\img\iconmonstr-log-out-1-240.png" />
     <Content Include="Content\img\iconmonstr-log-out-7-240.png" />
     <Content Include="Content\img\iconmonstr-log_while.png" />
-    <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\spa.png" />
     <Content Include="Content\img\user_whiile.png" />
     <Content Include="Content\less\bootstrap.css">
@@ -540,12 +538,6 @@
     </Content>
     <Content Include="Content\less\variables.min.css">
       <DependentUpon>variables.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Site - Copy %282%29.css">
-      <DependentUpon>Site - Copy %282%29.less</DependentUpon>
-    </Content>
-    <Content Include="Content\Site - Copy %282%29.min.css">
-      <DependentUpon>Site - Copy %282%29.css</DependentUpon>
     </Content>
     <Content Include="Content\SiteMobile.css">
       <DependentUpon>SiteMobile.less</DependentUpon>
@@ -672,12 +664,9 @@
       <DependentUpon>SiteMobile.css</DependentUpon>
     </Content>
     <Content Include="Content\SiteMobile.less" />
-    <Content Include="Content\Site - Copy %282%29.css.map">
-      <DependentUpon>Site - Copy %282%29.css</DependentUpon>
-    </Content>
-    <Content Include="Content\Site - Copy %282%29.less" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="WebMyReadme\Что нужно сделать\что нужно сделать.html" />
     <None Include="Properties\PublishProfiles\webmvc.pubxml" />
     <Content Include="Views\Shared\_TreePartial.cshtml" />
     <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
@@ -691,6 +680,7 @@
     <Content Include="Views\Home\ForgotPasswordConfirmationTest.cshtml" />
     <Content Include="Views\Account\LoginModal.cshtml" />
     <Content Include="Views\Account\RegisterModal.cshtml" />
+    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
