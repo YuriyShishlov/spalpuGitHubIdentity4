@@ -1,5 +1,9 @@
-﻿body {
-  font-family: 'Open Sans', sans-serif;
+﻿@font-face {
+  font-family: OpenSans;
+  src: url(fonts/OpenSans-Regular.ttf);
+}
+body {
+  font-family: OpenSans, sans-serif;
   font-size: 16px;
   color: #0d49a8;
   font-weight: normal;
@@ -119,7 +123,7 @@ modal_body_padding_bottom_login {
 }
 #left {
   background-color: #f8f8f8;
-  padding: 0 10px;
+  padding: 10px 10px 10px 10px;
   font-size: 16px;
   padding-bottom: 20000px;
   margin-bottom: -20000px;

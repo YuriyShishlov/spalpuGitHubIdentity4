@@ -19,7 +19,7 @@ namespace IdentitySample
                         "~/Scripts/urlState.js",
                         "~/Scripts/close_modal.js"
                         ));
-                        //"~/Scripts/metisMenu.js"
+            //"~/Scripts/metisMenu.js"
 
             bundles.Add(new ScriptBundle("~/bundles/mobilejquery").Include(
                         "~/Scripts/jquery-{version}.js",
@@ -41,10 +41,12 @@ namespace IdentitySample
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/less/bootstrap.css",
+                      "~/Content/fonts-awesome/css/font-awesome.css",
                       "~/Content/Site.css"));
 
             bundles.Add(new StyleBundle("~/Content/mobilecss").Include(
                       "~/Content/less/bootstrap.css",
+                      "~/Content/fonts-awesome/css/font-awesome.css",
                       "~/Content/SiteMobile.css"));
         }
     }

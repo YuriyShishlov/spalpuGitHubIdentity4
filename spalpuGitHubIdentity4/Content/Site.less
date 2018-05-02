@@ -1,5 +1,9 @@
 ﻿//Начало Определяем переменные Less
 //ШРИФТЫ:
+@font-face { 
+  font-family: OpenSans; //Гарнитура шрифта
+  src: url(fonts/OpenSans-Regular.ttf); //Путь к файлу со шрифтом
+  } 
 @size: 18px; //Размер шрифта по умолчанию
 @font_color: #0d49a8; //Цвет шрифта в body
 @font_color_white: #fff; //Цвет шрифта для темного фона
@@ -22,7 +26,7 @@
 
 //Начало Общие установки
 body {
-    font-family: 'Open Sans', sans-serif; //Шрифт поключен с fonts.google.com/
+    font-family: OpenSans, sans-serif; //Шрифт поключен
     font-size: @size - 2; //Размер шрифта
     color: @font_color; //Цвет шрифта
     font-weight: normal; //Вес шрифта
@@ -202,7 +206,7 @@ modal_body_padding_bottom_login{
 //Начало Первая колонка
 #left {
     background-color: @background_first_col;
-    padding: 0 10px;
+    padding: 10px 10px 10px 10px;
     font-size: @size - 2px;
     padding-bottom: 20000px; //Для выравнивания колонок
     margin-bottom: -20000px; //Для выравнивания колонок

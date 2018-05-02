@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">@*Для максимальной совместимости bootstrap с IE*@
     <title>@ViewBag.Title</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     @RenderSection("meta", required: false)
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -100,7 +98,7 @@
                             <li>@Html.ActionLink("UsersAdmin", "Index", "UsersAdmin")</li>
                         }
                     </ul>
-                    @Html.Partial("_LoginPartial")
+                    @*@Html.Partial("_LoginPartial")*@
 
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->

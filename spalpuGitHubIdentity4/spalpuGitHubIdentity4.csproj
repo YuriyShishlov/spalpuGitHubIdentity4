@@ -169,6 +169,9 @@
       <DependentUpon>spalpuGitHubIdentity4.mdf</DependentUpon>
     </Content>
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\fonts-awesome\css\font-awesome.css" />
+    <Content Include="Content\fonts-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\fonts-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\images\andr.jpg" />
     <Content Include="Content\images\favicon.ico" />
     <Content Include="Content\images\fon.png" />
@@ -667,6 +670,12 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="WebMyReadme\Что нужно сделать\что нужно сделать.html" />
+    <Content Include="Content\fonts-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\OpenSans-Regular.ttf" />
     <None Include="Properties\PublishProfiles\webmvc.pubxml" />
     <Content Include="Views\Shared\_TreePartial.cshtml" />
     <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
