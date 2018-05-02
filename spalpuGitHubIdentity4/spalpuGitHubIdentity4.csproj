@@ -15,7 +15,8 @@
     <AssemblyName>spalpuGitHubIdentity4</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -164,10 +165,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\spalpuGitHubIdentity4.mdf" />
-    <Content Include="App_Data\spalpuGitHubIdentity4_log.ldf">
-      <DependentUpon>spalpuGitHubIdentity4.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\fonts-awesome\css\font-awesome.css" />
     <Content Include="Content\fonts-awesome\css\font-awesome.min.css" />
@@ -676,6 +673,7 @@
     <Content Include="Content\fonts-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\fonts-awesome\fonts\FontAwesome.otf" />
     <Content Include="Content\fonts\OpenSans-Regular.ttf" />
+    <None Include="Properties\PublishProfiles\spalpu.pubxml" />
     <None Include="Properties\PublishProfiles\webmvc.pubxml" />
     <Content Include="Views\Shared\_TreePartial.cshtml" />
     <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
@@ -866,7 +864,9 @@
       <DependentUpon>201709020810462_DateCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
