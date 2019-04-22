@@ -103,9 +103,9 @@ namespace IdentitySample.Controllers
                         //await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: true);
                         var result = await SignInManager.PasswordSignInAsync(model.LogModel.Email, model.LogModel.Password, model.LogModel.RememberMe, shouldLockout: false);
                         //return RedirectToLocal(returnUrl);
-                        //return Redirect("/Home/Index");
+                        return Redirect("/Home/Index");
                         //return JavaScript("window.location='/Home/Index'");
-                        return JavaScript("location.reload(true)");
+                        //return JavaScript("location.reload(true)");
                     }
                     else
                     {
