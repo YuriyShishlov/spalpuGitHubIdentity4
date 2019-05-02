@@ -1,18 +1,45 @@
 ﻿//Запуск плагина меню
-//$(function () {
+$(function () {
 
-//    $('#menu').metisMenu();
+    //$('#menu').metisMenu();
 
-//    $('#menu2').metisMenu({
-//        toggle: false
-//    });
-//});
+    $('#menu').metisMenu({ 
+        // enabled/disable the auto collapse.
+        toggle: false, 
+    // prevent default event
+    //preventDefault: true,
+    // default classes
+    //activeClass: 'active',
+    //collapseClass: 'collapse',
+    //collapseInClass: 'in',
+    //collapsingClass: 'collapsing',
+    // .nav-link for Bootstrap 4
+    //triggerElement: 'a',
+    // .nav-item for Bootstrap 4
+    //parentTrigger: 'li',
+    // .nav.flex-column for Bootstrap 4
+    //subMenu: 'ul'
+});
+
+
+    //$('#menu2').metisMenu({
+    //    toggle: false
+    //});
+});
 
 //Жизнь - это движение
 //Чтобы сворачивалось
-$("#life").click(function () {
-    $("#menu").slideToggle();
-});
+//$("#life").click(function () {
+//    $("#menu").slideToggle();
+    //$("#menu2").hide();
+//});
+
+//СФА
+//Чтобы сворачивалось
+//$("#spa").click(function () {
+//    $("#menu2").slideToggle();
+    //$("#menu").hide();
+//});
 
 //Параметры карусели
 $('.carousel').carousel({
