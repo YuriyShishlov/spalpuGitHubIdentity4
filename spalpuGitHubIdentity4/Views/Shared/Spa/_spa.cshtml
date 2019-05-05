@@ -1,0 +1,36 @@
+﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_all" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Lifego/All", myTitle = "Памятка" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_aussage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Spa/Aussage", myTitle = "Злое предисловие" })
+
+<div class="row">
+    <div class="col-lg-9 col-lg-offset-3">
+        <p>Обычные люди предисловие не читают. Я тоже, в общем-то, редко. Заглядываю туда – ну что там может быть интересного? И все же здесь случай немного другой. Для того чтобы не тратить ваше время попусту, я буду убеждать вас не читать то, что написано!..</p>
+    </div>
+</div>
+
+
+
+<h1>Предисловие (злое)</h1>
+
+<p>Несколько причин, чтобы не читать дальше:</p>
+
+<p>Если вы ищете ‘легкого чтива’, пытаетесь развлечься или убить время – это не для вас. В этом случае возьмите детектив, любовный роман или посмотрите сериал.</p>
+
+<p>Речь здесь пойдет о самых банальных вещах – это знают все.</p>
+
+<p>Описания состояния человеческого тела – вещь довольно нудная, требует много сравнений, отступлений, образов и т.п. Поэтому для восприятия информации нужен соответствующий настрой, желание получать и ‘переваривать’ ее.</p>
+
+<p>Если вы считаете, что можно просто пролистать работу и посмотреть картинки и все будет понятно.</p>
+
+<p>Если вы считаете, себя абсолютно здоровым, эти проблемы вас не волнуют, и вас устраивает существующее положение вещей.</p>
+
+<p>Если вам просто лень ‘наморщить лоб’.</p>
+
+<p>Если вы резкий и непримиримый противник любой физической активности (встречалось мне и такое).</p>
+
+<p>Если вас полностью устраивает ваше мировоззрение и вы не готовы (не хотите) немного ‘перетрясти’ его и уложить его по-новому.</p>
+
+<p>Или как выражался незабвенный Иосиф Виссарионович, указывая мундштуком своей трубки в грудь собеседника: а ви что думали, дорогой, революцию делать – это вам лобио кушать?..</p>
+
+
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_all" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Lifego/All", myTitle = "Памятка" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_aussage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Spa/Aussage", myTitle = "Злое предисловие" })

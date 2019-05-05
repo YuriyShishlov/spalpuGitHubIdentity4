@@ -15,107 +15,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="~/Content/img/spa.png" /></a>
-                </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Книга<span class="caret"></span></a>
-                            <ul class="dropdown-menu menu_heigh">
-                                <li>@Html.ActionLink("Жизнь - это Движение", "LifeGo", "Lifego")</li>
-                                <li>@Html.ActionLink("Здоровье", "SmailPhilosophy", "Lifego")</li>
-                                <li>@Html.ActionLink("Остеохондроз", "Osteochondrosis", "Lifego")</li>
-                                <li>@Html.ActionLink("Наши Мышцы", "Mysshtsy", "Lifego")</li>
-                                <li>@Html.ActionLink("Что такое Мышца?", "Whomysshtsy", "Lifego")</li>
-                                <li>@Html.ActionLink("Расслабление", "Relaxation", "Lifego")</li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Азбука СФА</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#"></a></li>
-                                <li>@Html.ActionLink("Жизнь - это Движение", "LifeGo", "Lifego")</li>
-                                <li>@Html.ActionLink("Здоровье", "SmailPhilosophy", "Lifego")</li>
-                                <li>@Html.ActionLink("Остеохондроз", "Osteochondrosis", "Lifego")</li>
-                                <li>@Html.ActionLink("Наши Мышцы", "Mysshtsy", "Lifego")</li>
-                                <li>@Html.ActionLink("Что такое Мышца?", "Whomysshtsy", "Lifego")</li>
-                                <li>@Html.ActionLink("Расслабление", "Relaxation", "Lifego")</li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Азбука СФА</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#"></a></li>
-                            </ul>
-                        </li>
+        @*Навигация*@
+        @Html.Partial("~/Views/Shared/_navbar.cshtml")
 
-                        <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
-
-                        @if (Request.IsAuthenticated && User.IsInRole("Admin"))
-                        {
-                            <li>@Html.ActionLink("RolesAdmin", "Index", "RolesAdmin")</li>
-                            <li>@Html.ActionLink("UsersAdmin", "Index", "UsersAdmin")</li>
-                        }
-                    </ul>
-                    @Html.Partial("_LoginPartial")
-
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
     </header>
-    <div class="fon_slider">
-        <div class="container">
-            <div id="my-carousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#my-carousel" data-slide-to="0" class="active slade"></li>
-                    <li data-target="#my-carousel" data-slide-to="1" class="slade"></li>
-                    <li data-target="#my-carousel" data-slide-to="2" class="slade"></li>
-                </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img alt="Слайд 1" src="~/Content/img/header3.png" />
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img alt="Слайд 2" src="~/Content/img/header1.png" />
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img alt="Слайд 3" src="~/Content/img/header2.png" />
-                        <div class="carousel-caption">
-                        </div>
-                    </div>
-                </div>
+    @*Слайдер*@
+    @Html.Partial("~/Views/Shared/_slider.cshtml")
 
-                @*<a class="left carousel-control" href="#my-carousel" data-slide="prev">
-                *@
-                @*Стрелка на слайдере влево*@
-                @*<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>*@
-                @*
-                    </a>
-                    <a class="right carousel-control" href="#my-carousel" data-slide="next">
-                *@
-                @*Стрелка на слайдере вправо*@
-                @*<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>*@
-                @*
-                    </a>*@
-            </div>
-        </div>
-    </div>
+    @*Левая и правая колонки*@
     <div id="wrap">
         <div class="container">
             <div class="row">
@@ -129,9 +41,11 @@
             </div>
         </div>
     </div>
+
+    @*Футер*@
     <footer class="navbar navbar-inverse">
         <div class="container">
-            <p>&copy; @DateTime.Now.Year</p>
+            @Html.Partial("~/Views/Shared/_footer.cshtml")
         </div>
     </footer>
 

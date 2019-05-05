@@ -13,7 +13,7 @@ namespace IdentitySample
                         "~/Scripts/jquery.unobtrusive-ajax.js",
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/respond.js",
-                        "~/Scripts/metisMenu.js",
+                        //"~/Scripts/metisMenu.js",
                         "~/Scripts/up.js",
                         "~/Scripts/startMenu.js",
                         "~/Scripts/history.js/history.js",

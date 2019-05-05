@@ -692,6 +692,18 @@
     <Content Include="Views\Account\LoginModal.cshtml" />
     <Content Include="Views\Account\RegisterModal.cshtml" />
     <Content Include="Views\Shared\_Layout - Copy.cshtml" />
+    <Content Include="Views\Spa\Spa.cshtml" />
+    <Content Include="Views\Spa\A.cshtml" />
+    <Content Include="Views\Shared\Spa\_spa.cshtml" />
+    <Content Include="Views\Shared\Spa\_aussage.cshtml" />
+    <Content Include="Views\Shared\_footer.cshtml" />
+    <Content Include="Views\Shared\_slider.cshtml" />
+    <Content Include="Views\Shared\_knigi.cshtml" />
+    <Content Include="Views\Shared\_navbar.cshtml" />
+    <Content Include="Views\Spa\Aussage.cshtml" />
+    <Content Include="Views\Spa\GlobalIssues.cshtml" />
+    <Content Include="Views\Shared\Spa\_globalIssues.cshtml" />
+    <Content Include="Views\Shared\Spa\_a.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -839,6 +851,7 @@
     <Compile Include="Controllers\LifegoController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RolesAdminController.cs" />
+    <Compile Include="Controllers\SpaController.cs" />
     <Compile Include="Controllers\UserAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
