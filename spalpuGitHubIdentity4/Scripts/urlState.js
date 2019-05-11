@@ -1,7 +1,8 @@
 ﻿function OnSuccessJs() {
-    var url = $(this).attr("myUrl");
-    var title = $(this).attr("myTitle");
+    var myUrl = $(this).attr("myUrl");
+    var myTitle = $(this).attr("myTitle");
     var currentState = window.history.state;
-    window.history.pushState(currentState, title, url);
+    document.title = myTitle;
+    window.history.pushState(currentState, myTitle, myUrl);
     return false;
 }

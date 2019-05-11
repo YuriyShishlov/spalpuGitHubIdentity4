@@ -1,4 +1,10 @@
-﻿//Запуск плагина меню
+﻿//Начальные установки многоуровнего меню
+$(function () {
+    $(".book1").hide();//Свернуто
+    $(".book2").hide();//Свернуто
+});
+
+//Запуск плагина меню
 //$(function () {
 
 //    $('#menu').metisMenu({
@@ -22,15 +28,20 @@
 
 //Жизнь - это движение
 //Чтобы сворачивалось
-$("#link1").click(function () {
-    $("#book1").slideToggle();
+$(".link1").click(function () {
+    $(".book1").slideToggle();
+    $(".link1 > span > i").toggleClass("fa-rotate-90");
+
     //$("#menu2").hide();
 });
 
 //СФА
 //Чтобы сворачивалось
-$("#link2").click(function () {
-    $("#book2").slideToggle();
+$(".link2").click(function () {
+    $(".book2").slideToggle();
+    $(".link2 > span > i").toggleClass("fa-rotate-90");
+
+    //$("#menu2").hide();
 });
 
 //Параметры карусели

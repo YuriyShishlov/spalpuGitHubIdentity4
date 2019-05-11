@@ -1,4 +1,4 @@
-﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Spa/Spa", myTitle = "Предисловие СФА" })
+﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Spa/Spa", myTitle = "Предисловия не читают" })
 @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_globalIssues" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Spa/GlobalIssues", myTitle = "Вопросы глобальные" })
 
 <h1>Эта информация для вас</h1>
@@ -20,7 +20,15 @@
 <p>Если вы читали (и использовали) предыдущую работу ‘Жизнь это движение’ (и удовлетворены достигнутым результатом) и ждете обещанного (для тех людей, с кем общался лично) продолжения.</p>
 
 <p>Тогда вы смело можете переворачивать страницу.</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
-@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Spa/Spa", myTitle = "Предисловие СФА" })
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Spa/Spa", myTitle = "Предисловия не читают" })
 @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_globalIssues" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Spa/GlobalIssues", myTitle = "Вопросы глобальные" })
 

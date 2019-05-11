@@ -1,9 +1,10 @@
 ﻿//Начало Определяем переменные Less
 //ШРИФТЫ:
-@font-face { 
-  font-family: OpenSans; //Гарнитура шрифта
-  src: url(fonts/OpenSans-Regular.ttf); //Путь к файлу со шрифтом
-  } 
+@font-face {
+    font-family: OpenSans; //Гарнитура шрифта
+    src: url(fonts/OpenSans-Regular.ttf); //Путь к файлу со шрифтом
+}
+
 @size: 18px; //Размер шрифта по умолчанию
 @font_color: #0d49a8; //Цвет шрифта в body
 @font_color_white: #fff; //Цвет шрифта для темного фона
@@ -68,7 +69,7 @@ input:-webkit-autofill {
     padding-right: 0;
 }
 
-modal_body_padding_bottom_login{
+modal_body_padding_bottom_login {
     padding-bottom: 50px;
 }
 
@@ -76,12 +77,12 @@ modal_body_padding_bottom_login{
     padding-bottom: 0;
 }
 
-.modal-backdrop{
+.modal-backdrop {
     background-color: #add1e5;
     opacity: 0,7;
 }
 
-.margin_register_forgot{
+.margin_register_forgot {
     margin-bottom: 52px;
 }
 
@@ -124,52 +125,70 @@ modal_body_padding_bottom_login{
 //Конец Навигационное меню
 
 //Начало многоуровневого меню
+.fa.fa-sort-desc, .fa.fa-sort-desc.fa-rotate-90 {
+    float: right;
+    margin-right: -5px;
+}
+
+.fa.fa-sort-desc {
+    margin-top: 0px;
+}
+
+.fa.fa-sort-desc.fa-rotate-90 {
+    margin-top: 3px;
+}
+
+.color_arrow {
+    //color: #7065E9;
+    color: #5A8FE5;
+}
+
 .dropdown-submenu {
-  position: relative;
+    position: relative;
 }
 
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  -webkit-border-radius: 0 6px 6px 6px;
-  -moz-border-radius: 0 6px 6px;
-  border-radius: 0 6px 6px 6px;
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
 }
 
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
 }
 
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #ccc;
-  margin-top: 5px;
-  margin-right: -10px;
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
 }
 
-.dropdown-submenu:hover>a:after {
-  border-left-color: #fff;
+.dropdown-submenu:hover > a:after {
+    border-left-color: #fff;
 }
 
 .dropdown-submenu.pull-left {
-  float: none;
+    float: none;
 }
 
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  -webkit-border-radius: 6px 0 6px 6px;
-  -moz-border-radius: 6px 0 6px 6px;
-  border-radius: 6px 0 6px 6px;
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
 }
 //Конец многоуровневого меню
 
@@ -212,7 +231,7 @@ modal_body_padding_bottom_login{
     margin-bottom: -20000px; //Для выравнивания колонок
 }
 
-#left a{
+#left a {
     color: @color_font_aside; //Цвет шрифта в первой колонке
 }
 //Конец Первая колонка
@@ -253,8 +272,8 @@ modal_body_padding_bottom_login{
     font-weight: 100; //Чтобы ослабить strong
 }
 
-.panel{
-    border: 0 solid transparent;//Чтобы убрать белые полоски
+.panel {
+    border: 0 solid transparent; //Чтобы убрать белые полоски
 }
 
 //Выравнивание для главной страницы

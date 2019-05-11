@@ -704,6 +704,7 @@
     <Content Include="Views\Spa\GlobalIssues.cshtml" />
     <Content Include="Views\Shared\Spa\_globalIssues.cshtml" />
     <Content Include="Views\Shared\Spa\_a.cshtml" />
+    <Content Include="Views\Shared\_knigi - Copy.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

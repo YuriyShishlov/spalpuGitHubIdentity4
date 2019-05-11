@@ -67,6 +67,20 @@ modal_body_padding_bottom_login {
 .navbar-inverse .navbar-toggle {
   border-color: transparent;
 }
+.fa.fa-sort-desc,
+.fa.fa-sort-desc.fa-rotate-90 {
+  float: right;
+  margin-right: -5px;
+}
+.fa.fa-sort-desc {
+  margin-top: 0px;
+}
+.fa.fa-sort-desc.fa-rotate-90 {
+  margin-top: 3px;
+}
+.color_arrow {
+  color: #5A8FE5;
+}
 .dropdown-submenu {
   position: relative;
 }
