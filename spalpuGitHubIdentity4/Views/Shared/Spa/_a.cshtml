@@ -1,10 +1,10 @@
-﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Spa/Spa", myTitle = "Предисловие СФА" })
-@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/SPHA/" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Spa/All", myTitle = "" })
+﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://localhost:4632/Spa/Spa", data_mytitle = "Предисловие СФА" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/SPHA/" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://localhost:4632/Spa/All", data_mytitle = "" })
 
 
 
-@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Spa/Spa", myTitle = "Предисловие СФА" })
-@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/SPHA/" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Spa/All", myTitle = "" })
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://localhost:4632/Spa/Spa", data_mytitle = "Предисловие СФА" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/SPHA/" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://localhost:4632/Spa/All", data_mytitle = "" })
 
 
 

@@ -1,5 +1,5 @@
-﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_all" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Lifego/All", myTitle = "Неправильная и правильная нагрузка на позвоночник" })
-@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_aussage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Spa/Aussage", myTitle = "Информация для вас" })
+﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_all" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://localhost:4632/Lifego/All", data_mytitle = "Неправильная и правильная нагрузка на позвоночник" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_aussage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://localhost:4632/Spa/Aussage", data_mytitle = "Информация для вас" })
 
 <div class="row">
     <div class="col-lg-9 col-lg-offset-3">
@@ -37,5 +37,5 @@
 <br />
 
 
-@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_all" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", myUrl = "http://localhost:4632/Lifego/All", myTitle = "Неправильная и правильная нагрузка на позвоночник" })
-@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_aussage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", myUrl = "http://localhost:4632/Spa/Aussage", myTitle = "Информация для вас" })
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_all" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://localhost:4632/Lifego/All", data_mytitle = "Неправильная и правильная нагрузка на позвоночник" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_aussage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://localhost:4632/Spa/Aussage", data_mytitle = "Информация для вас" })
