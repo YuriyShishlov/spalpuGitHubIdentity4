@@ -20,5 +20,9 @@ namespace spalpuGitHubIdentity4.Controllers
         {
             return View();
         }
+        public ActionResult widerabouthealth()
+        {
+            return View();
+        }
     }
 }

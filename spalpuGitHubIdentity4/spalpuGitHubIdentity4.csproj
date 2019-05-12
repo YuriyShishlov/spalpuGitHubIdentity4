@@ -523,13 +523,13 @@
     <Content Include="Content\images\pop_up\close.png" />
     <Content Include="Content\img\download.png" />
     <Content Include="Content\img\gear.png" />
-    <Content Include="Content\img\header1.png" />
-    <Content Include="Content\img\header2.png" />
-    <Content Include="Content\img\header3.png" />
+    <Content Include="Content\img\header1.jpg" />
+    <Content Include="Content\img\header2.jpg" />
+    <Content Include="Content\img\header3.jpg" />
     <Content Include="Content\img\iconmonstr-log-out-1-240.png" />
     <Content Include="Content\img\iconmonstr-log-out-7-240.png" />
     <Content Include="Content\img\iconmonstr-log_while.png" />
-    <Content Include="Content\img\spa.png" />
+    <Content Include="Content\img\spa.jpg" />
     <Content Include="Content\img\user_whiile.png" />
     <Content Include="Content\less\bootstrap.css">
       <DependentUpon>bootstrap.less</DependentUpon>
@@ -705,6 +705,8 @@
     <Content Include="Views\Shared\Spa\_globalIssues.cshtml" />
     <Content Include="Views\Shared\Spa\_a.cshtml" />
     <Content Include="Views\Shared\_knigi - Copy.cshtml" />
+    <Content Include="Views\Shared\_Pop_up - Copy.cshtml" />
+    <Content Include="Views\Spa\widerabouthealth.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

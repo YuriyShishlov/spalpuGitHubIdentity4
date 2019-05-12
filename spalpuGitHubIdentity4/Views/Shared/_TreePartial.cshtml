@@ -5,7 +5,8 @@
         UpdateTargetId = "loadcontent",
         InsertionMode = InsertionMode.Replace,
         HttpMethod = "GET",
-        OnSuccess = "OnSuccessJs" //В случае  успеха загружает Url адрес
+        OnSuccess = "OnSuccessJs",//В случае  успеха загружает Url адрес
+        OnComplete = "OnCompleteJs" //Поднимает вверх страницы
     };
 }
 @*<h4>@Ajax.ActionLink("Жизнь - это Движение", "Index", "Home", new { strpage = "LifeGo/_lifego" }, ajaxopts, null)</h4>*@
@@ -13,11 +14,11 @@
 <ul id="menu">
     @*<li class="active">*@
     <li class="active">
-        @*@Ajax.RawActionLink("Жизнь - это Движение <span class='fa arrow'>", "Index", "Home", new { strpage = "LifeGo/_lifego" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/LifeGo", data_mytitle = "" })*@
+        @*@Ajax.RawActionLink("Жизнь - это Движение <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/_lifego" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/LifeGo", data_mytitle = "" })*@
         <a href="#" class="link1">Жизнь - это Движение<span class="color_arrow"><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
         <ul class="book1">
             <li>
-                @Ajax.RawActionLink("Введение <span class='fa arrow'>", "Index", "Home", new { strpage = "LifeGo/_lifego" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/LifeGo", data_mytitle = "Жизнь - это Движение" })
+                @Ajax.RawActionLink("Введение <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/_lifego" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/LifeGo", data_mytitle = "Жизнь - это Движение" })
                 <ul>
                     <li>@Ajax.ActionLink("Здоровье", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/SmailPhilosophy", data_mytitle = "Здоровье" })</li>
                     <li>@Ajax.ActionLink("Остеохондроз", "Index", "Home", new { strpage = "LifeGo/_osteochondrosis" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Osteochondrosis", data_mytitle = "Остеохондроз" })</li>
@@ -27,7 +28,7 @@
                 </ul>
             </li>
             <li>
-                @Ajax.RawActionLink("Азбука СФА <span class='fa arrow'>", "Index", "Home", new { strpage = "LifeGo/SPHA/_gold_rules" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Gold_rules", data_mytitle = "Золотое правило" })
+                @Ajax.RawActionLink("Азбука СФА <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_gold_rules" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Gold_rules", data_mytitle = "Золотое правило" })
                 <ul>
                     <li>@Ajax.ActionLink("Зарядка хвоста", "Index", "Home", new { strpage = "LifeGo/SPHA/_charging_for_tail" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Charging_for_tail", data_mytitle = "Зарядка для хвоста" })</li>
                     <li>@Ajax.ActionLink("Самостоятельно", "Index", "Home", new { strpage = "LifeGo/SPHA/_singly" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Singly", data_mytitle = "Самостоятельные занятия" })</li>
@@ -35,13 +36,13 @@
                 </ul>
             </li>
             <li>
-                @Ajax.RawActionLink("Дыхание <span class='fa arrow'>", "Index", "Home", new { strpage = "LifeGo/SPHA/_breathing_exercises" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Breathing_exercises", data_mytitle = "Дыхательные упражнения" })
+                @Ajax.RawActionLink("Дыхание <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_breathing_exercises" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Breathing_exercises", data_mytitle = "Дыхательные упражнения" })
                 <ul>
                     <li>@Ajax.ActionLink("Упражнения", "Index", "Home", new { strpage = "LifeGo/SPHA/_breathing_exercises_relax" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Breathing_exercises_relax", data_mytitle = "Дыхательная гимнастика" })</li>
                 </ul>
             </li>
             <li>
-                @Ajax.RawActionLink("Массаж <span class='fa arrow'>", "Index", "Home", new { strpage = "LifeGo/SPHA/_massage" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Massage", data_mytitle = "Массаж" })
+                @Ajax.RawActionLink("Массаж <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_massage" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Massage", data_mytitle = "Массаж" })
                 <ul>
                     <li>@Ajax.ActionLink("Массаж и боль", "Index", "Home", new { strpage = "LifeGo/SPHA/_massage_and_pain" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Massage_and_pain", data_mytitle = "Массаж и боль" })</li>
                     <li>@Ajax.ActionLink("Дуэт", "Index", "Home", new { strpage = "LifeGo/SPHA/_Massage_is_available_to_everyone" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Massage_is_available_to_everyone", data_mytitle = "Массаж доступен каждому" })</li>
@@ -55,7 +56,7 @@
                 </ul>
             </li>
             <li>
-                @Ajax.RawActionLink("Приложение <span class='fa arrow'>", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Attachment", data_mytitle = "Лечебная физкультура. Упражнения для спины." })
+                @Ajax.RawActionLink("Приложение <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Attachment", data_mytitle = "Лечебная физкультура. Упражнения для спины." })
                 <ul>
                     <li>@Ajax.ActionLink("Острый период 1", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period1" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Acute_period1", data_mytitle = "Комплекс лечебной гимнастики" })</li>
                     <li>@Ajax.ActionLink("Острый период 2", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period2" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Acute_period2", data_mytitle = "Специальные упражнения  острого периода" })</li>
@@ -72,10 +73,10 @@
 
     <li class="active">
         <a href="#" class="link2">СФА<span class="color_arrow"><i class="fa fa-sort-desc" aria-hidden="true"></i></span></a>
-        @*@Ajax.RawActionLink("СФА <span class='fa arrow'>", "Index", "Home", new { strpage = "Spa/_spa" }, ajaxopts, new { data_myurl = "http://localhost:4632/Spa/Spa", data_mytitle = "" })*@
+        @*@Ajax.RawActionLink("СФА <span class='fa arrow'></span>", "Index", "Home", new { strpage = "Spa/_spa" }, ajaxopts, new { data_myurl = "http://localhost:4632/Spa/Spa", data_mytitle = "" })*@
         <ul class="book2">
             <li>
-                @Ajax.RawActionLink("Предисловие <span class='fa arrow'>", "Index", "Home", new { strpage = "Spa/_spa" }, ajaxopts, new { data_myurl = "http://localhost:4632/Spa/Spa", data_mytitle = "Предисловия не читают" })
+                @Ajax.RawActionLink("Предисловие <span class='fa arrow'></span>", "Index", "Home", new { strpage = "Spa/_spa" }, ajaxopts, new { data_myurl = "http://localhost:4632/Spa/Spa", data_mytitle = "Предисловия не читают" })
                 <ul>
                     <li>@Ajax.ActionLink("Информ для вас", "Index", "Home", new { strpage = "Spa/_aussage" }, ajaxopts, new { data_myurl = "http://localhost:4632/Spa/Aussage", data_mytitle = "Информация для вас" })</li>
                     <li>@Ajax.ActionLink("Вопросы глобал", "Index", "Home", new { strpage = "Spa/_globalIssues" }, ajaxopts, new { data_myurl = "http://localhost:4632/Spa/GlobalIssues", data_mytitle = "Вопросы глобальные" })</li>
@@ -85,7 +86,7 @@
                 </ul>
             </li>
             @*<li>
-                    @Ajax.RawActionLink("Азбука СФА <span class='fa arrow'>", "Index", "Home", new { strpage = "LifeGo/SPHA/_gold_rules" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Gold_rules", data_mytitle = "" })
+                    @Ajax.RawActionLink("Азбука СФА <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_gold_rules" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Gold_rules", data_mytitle = "" })
                     <ul>
                         <li>@Ajax.ActionLink("Зарядка для Хвоста", "Index", "Home", new { strpage = "LifeGo/SPHA/_charging_for_tail" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Charging_for_tail", data_mytitle = "" })</li>
                         <li>@Ajax.ActionLink("Самостоятельно", "Index", "Home", new { strpage = "LifeGo/SPHA/_singly" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Singly", data_mytitle = "" })</li>
@@ -93,13 +94,13 @@
                     </ul>
                 </li>
                 <li>
-                    @Ajax.RawActionLink("Дыхание <span class='fa arrow'>", "Index", "Home", new { strpage = "LifeGo/SPHA/_breathing_exercises" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Breathing_exercises", data_mytitle = "" })
+                    @Ajax.RawActionLink("Дыхание <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_breathing_exercises" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Breathing_exercises", data_mytitle = "" })
                     <ul>
                         <li>@Ajax.ActionLink("Упражнения", "Index", "Home", new { strpage = "LifeGo/SPHA/_breathing_exercises_relax" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Breathing_exercises_relax", data_mytitle = "" })</li>
                     </ul>
                 </li>
                 <li>
-                    @Ajax.RawActionLink("Массаж <span class='fa arrow'>", "Index", "Home", new { strpage = "LifeGo/SPHA/_massage" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Massage", data_mytitle = "" })
+                    @Ajax.RawActionLink("Массаж <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_massage" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Massage", data_mytitle = "" })
                     <ul>
                         <li>@Ajax.ActionLink("Массаж и боль", "Index", "Home", new { strpage = "LifeGo/SPHA/_massage_and_pain" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Massage_and_pain", data_mytitle = "" })</li>
                         <li>@Ajax.ActionLink("Дуэт", "Index", "Home", new { strpage = "LifeGo/SPHA/_Massage_is_available_to_everyone" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Massage_is_available_to_everyone", data_mytitle = "" })</li>
@@ -113,7 +114,7 @@
                     </ul>
                 </li>
                 <li>
-                    @Ajax.RawActionLink("Приложение <span class='fa arrow'>", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Attachment", data_mytitle = "" })
+                    @Ajax.RawActionLink("Приложение <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Attachment", data_mytitle = "" })
                     <ul>
                         <li>@Ajax.ActionLink("Острый период 1", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period1" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Acute_period1", data_mytitle = "" })</li>
                         <li>@Ajax.ActionLink("Острый период 2", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period2" }, ajaxopts, new { data_myurl = "http://localhost:4632/Lifego/Acute_period2", data_mytitle = "" })</li>
