@@ -20,7 +20,11 @@ namespace spalpuGitHubIdentity4.Controllers
         {
             return View();
         }
-        public ActionResult widerabouthealth()
+        public ActionResult More_about_health()
+        {
+            return View();
+        }
+        public ActionResult Spastic_muscle_condition()
         {
             return View();
         }

@@ -555,6 +555,8 @@
     <Content Include="Content\Site.min.css">
       <DependentUpon>Site.css</DependentUpon>
     </Content>
+    <Content Include="Content\video\massage.mp4" />
+    <Content Include="Content\video\player.swf" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -581,16 +583,19 @@
     <Content Include="Scripts\history.js\history.html4.js" />
     <Content Include="Scripts\history.js\history.js" />
     <Content Include="Scripts\history.js\json2.js" />
+    <Content Include="Scripts\jwplayer.js" />
+    <Content Include="Scripts\massage.mp4" />
+    <Content Include="Scripts\player.swf" />
     <Content Include="Scripts\startMenu.js" />
+    <Content Include="Scripts\swfobject.js" />
     <Content Include="Scripts\urlState.js" />
+    <Content Include="Scripts\videoplayer.js" />
     <Content Include="Views\Shared\_Pop_up_Copy.html" />
     <Content Include="WebMyReadme\Замены\Адрес ссылки.html" />
     <Content Include="WebMyReadme\Замены\Главная.html" />
-    <Content Include="WebMyReadme\Замены\Первая колонка.html" />
     <Content Include="WebMyReadme\Как сделать\Выравнивание_колонок.html" />
     <Content Include="WebMyReadme\Как сделать\Желтый _фон.html" />
     <Content Include="WebMyReadme\Удаленные\_LoginPartial.html" />
-    <Content Include="WebMyReadme\Удаленные\_TreePartial.cshtml" />
     <Content Include="A\spalpuGitHubIdentity4.mdf_copy" />
     <Content Include="A\spalpuGitHubIdentity4_log.ldf_copy" />
     <Content Include="Views\Shared\LifeGo\_lifego.cshtml" />
@@ -627,7 +632,6 @@
     <Content Include="WebMyReadme\База данных.html" />
     <Content Include="WebMyReadme\Как сделать\ВИДЕО.html" />
     <Content Include="WebMyReadme\Как сделать\Якорь на верх страницы.html" />
-    <Content Include="WebMyReadme\Порядок добавления статей.txt" />
     <Content Include="Views\Lifego\LifeGo.cshtml" />
     <Content Include="Views\Lifego\A.cshtml">
       <SubType>Code</SubType>
@@ -663,7 +667,6 @@
     <Content Include="Views\Lifego\Thai_massage.cshtml" />
     <Content Include="Views\Lifego\Whomysshtsy.cshtml" />
     <Content Include="App_Code\Helper.cshtml" />
-    <Content Include="WebMyReadme\Удаленные\Первая колонка.html" />
     <Content Include="Content\SiteMobile.css.map">
       <DependentUpon>SiteMobile.css</DependentUpon>
     </Content>
@@ -677,7 +680,9 @@
     <Content Include="Content\fonts-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\fonts-awesome\fonts\FontAwesome.otf" />
     <Content Include="Content\fonts\OpenSans-Regular.ttf" />
+    <Content Include="Content\video\massage.flv" />
     <None Include="Properties\PublishProfiles\spalpu.pubxml" />
+    <None Include="Properties\PublishProfiles\spalpu_file.pubxml" />
     <None Include="Properties\PublishProfiles\webmvc.pubxml" />
     <Content Include="Views\Shared\_TreePartial.cshtml" />
     <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
@@ -706,7 +711,12 @@
     <Content Include="Views\Shared\Spa\_a.cshtml" />
     <Content Include="Views\Shared\_knigi - Copy.cshtml" />
     <Content Include="Views\Shared\_Pop_up - Copy.cshtml" />
-    <Content Include="Views\Spa\widerabouthealth.cshtml" />
+    <Content Include="Views\Spa\More_about_health.cshtml" />
+    <Content Include="Views\Shared\Spa\_more_about_health.cshtml" />
+    <Content Include="Views\Spa\Spastic_muscle_condition.cshtml" />
+    <Content Include="Views\Shared\Spa\_spastic_muscle_condition.cshtml" />
+    <Content Include="Views\Home\Video.cshtml" />
+    <Content Include="Scripts\massage.flv" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
