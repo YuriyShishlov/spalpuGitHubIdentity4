@@ -59,7 +59,7 @@ body a:active {
 }
 #right p {
   font-size: 17px;
-  text-align: justify;
+  text-align: left;
   text-indent: 18px;
   margin: 0 20px 10px 20px;
 }
