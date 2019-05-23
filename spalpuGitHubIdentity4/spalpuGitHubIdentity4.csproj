@@ -555,8 +555,6 @@
     <Content Include="Content\Site.min.css">
       <DependentUpon>Site.css</DependentUpon>
     </Content>
-    <Content Include="Content\video\massage.mp4" />
-    <Content Include="Content\video\player.swf" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -583,13 +581,8 @@
     <Content Include="Scripts\history.js\history.html4.js" />
     <Content Include="Scripts\history.js\history.js" />
     <Content Include="Scripts\history.js\json2.js" />
-    <Content Include="Scripts\jwplayer.js" />
-    <Content Include="Scripts\massage.mp4" />
-    <Content Include="Scripts\player.swf" />
     <Content Include="Scripts\startMenu.js" />
-    <Content Include="Scripts\swfobject.js" />
     <Content Include="Scripts\urlState.js" />
-    <Content Include="Scripts\videoplayer.js" />
     <Content Include="Views\Shared\_Pop_up_Copy.html" />
     <Content Include="WebMyReadme\Замены\Адрес ссылки.html" />
     <Content Include="WebMyReadme\Замены\Главная.html" />
@@ -680,7 +673,6 @@
     <Content Include="Content\fonts-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\fonts-awesome\fonts\FontAwesome.otf" />
     <Content Include="Content\fonts\OpenSans-Regular.ttf" />
-    <Content Include="Content\video\massage.flv" />
     <None Include="Properties\PublishProfiles\spalpu.pubxml" />
     <None Include="Properties\PublishProfiles\spalpu_file.pubxml" />
     <None Include="Properties\PublishProfiles\webmvc.pubxml" />
@@ -715,8 +707,6 @@
     <Content Include="Views\Shared\Spa\_more_about_health.cshtml" />
     <Content Include="Views\Spa\spastic_muscle_condition.cshtml" />
     <Content Include="Views\Shared\Spa\_spastic_muscle_condition.cshtml" />
-    <Content Include="Views\Home\Video.cshtml" />
-    <Content Include="Scripts\massage.flv" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
