@@ -9,19 +9,19 @@ namespace IdentitySample.Controllers
     public class LifegoController : Controller
     {
         // GET: Lifego
-        public ActionResult LifeGo()
+        public ActionResult lifego()
         {
             return View();
         }
-        public ActionResult SmailPhilosophy()
+        public ActionResult health()
         {
             return View();
         }
-        public ActionResult Osteochondrosis()
+        public ActionResult osteochondrosis()
         {
             return View();
         }
-        public ActionResult Mysshtsy()
+        public ActionResult mysshtsy()
         {
             return View();
         }
