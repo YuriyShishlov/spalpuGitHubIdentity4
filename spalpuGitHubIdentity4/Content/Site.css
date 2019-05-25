@@ -142,8 +142,12 @@ modal_body_padding_bottom_login {
   padding-bottom: 20000px;
   margin-bottom: -20000px;
 }
-#left a {
+#left a,
+.move {
   color: #002ee6;
+}
+.move {
+  cursor: pointer;
 }
 .imgPhoto {
   float: left;
@@ -222,12 +226,14 @@ modal_body_padding_bottom_login {
 #menu ul {
   list-style: none;
 }
-#menu a {
+#menu a,
+.move {
   position: relative;
   display: block;
   padding: 4px 10px 4px 0;
 }
-#menu a:hover {
+#menu a:hover,
+.move:hover {
   background-color: #eeeeee;
 }
 .arrow {

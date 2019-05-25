@@ -231,8 +231,12 @@ modal_body_padding_bottom_login {
     margin-bottom: -20000px; //Для выравнивания колонок
 }
 
-#left a {
+#left a, .move {
     color: @color_font_aside; //Цвет шрифта в первой колонке
+}
+
+.move {
+    cursor: pointer;
 }
 //Конец Первая колонка
 
@@ -341,13 +345,13 @@ modal_body_padding_bottom_login {
     list-style: none;
 }
 
-#menu a {
+#menu a, .move {
     position: relative;
     display: block;
     padding: 4px 10px 4px 0;
 }
 
-#menu a:hover {
+#menu a:hover, .move:hover {
     background-color: @background_aside_active;
 }
 

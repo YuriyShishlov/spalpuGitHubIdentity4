@@ -165,7 +165,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="404 - Copy.html" />
     <Content Include="404.html" />
     <Content Include="App_Data\spalpuGitHubIdentity4.mdf" />
     <Content Include="App_Data\spalpuGitHubIdentity4_log.ldf">
