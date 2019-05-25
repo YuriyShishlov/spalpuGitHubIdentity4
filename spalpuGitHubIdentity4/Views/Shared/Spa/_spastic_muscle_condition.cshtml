@@ -1,7 +1,7 @@
 ﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_more_about_health" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://spalpu.ru/spa/more_about_health", data_mytitle = "Шире о здоровье" })
-@*@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/SPHA/" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://spalpu.ru/spa/all", data_mytitle = "" })*@
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/SPHA" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://spalpu.ru/spa/all", data_mytitle = "" })
 
-<h1>Спастическое состояние мышц</h1>
+<h1>Состояние мышц</h1>
 
 <p>Вопрос, который должен заинтересовать нас гораздо шире, чем просто в прикладном значении при борьбе с остеохондрозом. Механизм возникновения при болевом синдроме, более-менее понятен (см.), меры борьбы с ним тоже описаны, но… в общем-то благополучный человек зачастую при проверке (массаже, например) несет, оказывается несколько зон-’стрессоров’, ‘зажимов’ чисто физических, (и, соответственно, психологических). Нарушения эти мы уже рассматривали, механизм возникновения (упрощенно) тоже. А причина?</p>
 
@@ -22,5 +22,4 @@
 <p>Попытки воздействовать на соотношение приход-расход энергии в человеческом организме происходили (и происходят) постоянно, но часто они половинчаты, неуклюжи или по-детски наивны (например, доведение себя до истощения различными диетами, средствами ‘для похудения’ - для жизни важно нормальное, полноценное питание). Важен, как уже говорилось, баланс, баланс, баланс!!!</p>
 
 @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_more_about_health" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://spalpu.ru/spa/more_about_health", data_mytitle = "Шире о здоровье" })
-@*@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/SPHA/" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://spalpu.ru/spa/all", data_mytitle = "" })*@
-
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/SPHA" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://spalpu.ru/spa/all", data_mytitle = "" })

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace spalpuGitHubIdentity4.Controllers
 {
-    public class SpaController : Controller
+    public class spaController : Controller
     {
         public ActionResult Spa()
         {

@@ -165,6 +165,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404 - Copy.html" />
+    <Content Include="404.html" />
     <Content Include="App_Data\spalpuGitHubIdentity4.mdf" />
     <Content Include="App_Data\spalpuGitHubIdentity4_log.ldf">
       <DependentUpon>spalpuGitHubIdentity4.mdf</DependentUpon>
@@ -688,7 +690,6 @@
     <Content Include="Views\Home\ForgotPasswordConfirmationTest.cshtml" />
     <Content Include="Views\Account\LoginModal.cshtml" />
     <Content Include="Views\Account\RegisterModal.cshtml" />
-    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
     <Content Include="Views\Spa\spa.cshtml" />
     <Content Include="Views\Spa\a.cshtml" />
     <Content Include="Views\Shared\Spa\_spa.cshtml" />
@@ -701,7 +702,6 @@
     <Content Include="Views\Spa\globalIssues.cshtml" />
     <Content Include="Views\Shared\Spa\_globalIssues.cshtml" />
     <Content Include="Views\Shared\Spa\_a.cshtml" />
-    <Content Include="Views\Shared\_knigi - Copy.cshtml" />
     <Content Include="Views\Shared\_Pop_up - Copy.cshtml" />
     <Content Include="Views\Spa\more_about_health.cshtml" />
     <Content Include="Views\Shared\Spa\_more_about_health.cshtml" />
@@ -803,7 +803,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\up.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\UsersAdmin\Index.cshtml" />
     <Content Include="Views\UsersAdmin\Edit.cshtml" />
@@ -851,10 +853,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LifegoController.cs" />
+    <Compile Include="Controllers\lifegoController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RolesAdminController.cs" />
-    <Compile Include="Controllers\SpaController.cs" />
+    <Compile Include="Controllers\spaController.cs" />
     <Compile Include="Controllers\UserAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

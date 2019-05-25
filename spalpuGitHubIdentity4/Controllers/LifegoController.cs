@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace IdentitySample.Controllers
 {
-    public class LifegoController : Controller
+    public class lifegoController : Controller
     {
-        // GET: Lifego
+        // GET: lifego
         public ActionResult lifego()
         {
             return View();
