@@ -172,8 +172,9 @@ modal_body_padding_bottom_login {
   font-size: 28px;
 }
 #right h2 {
-  margin: 29px 0 24px 20px;
+  margin: 29px 0 24px 38px;
   padding: 0;
+  font-size: 24px;
 }
 #right strong {
   font-weight: 100;
@@ -211,6 +212,16 @@ modal_body_padding_bottom_login {
 }
 #loadcontent a.forward {
   float: right;
+}
+#loadcontent a.link_main {
+  color: #002ee6;
+}
+#loadcontent a.link_main:hover {
+  color: #add1e5;
+}
+#loadcontent a.link_main,
+#loadcontent a.link_main:hover {
+  text-decoration: underline;
 }
 #loadcontent a:hover {
   color: #eeeeee;

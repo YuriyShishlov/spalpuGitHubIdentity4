@@ -1,0 +1,15 @@
+﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "spa/_spastic_muscle_condition" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://spalpu.ru/spa/spastic_muscle_condition", data_mytitle = "Состояние мышц" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "spa/PHIZ/_physical_activity" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://spalpu.ru/spa/physical_activity", data_mytitle = "Физическая активность" })
+
+<h1>Баланс питания</h1>
+<p>Полноценное, сбалансированное питание, без излишеств и недостатков - это одна сторона медали. Эту сторону еще стоит изучать и изучать, но положительные сдвиги все же есть - человечество кровно заинтересовано в этом.</p>
+<p>Другая сторона медали - полноценное, сбалансированное потребление, расход этой энергии, не только количественное, но и качественное. Без решения этой проблемы, не может быть никакой речи о здоровье человека, а здоровье человека - основа нормальной жизнедеятельности и залог его успехов.</p>
+<p>Исходя из этой двуединости, главного ритма нашей жизни, и создавалась СФА (правда, надо сказать, сначала она и не рассматривалась как система повседневных занятий - только со временем, стали вырисовываться единые принципы подхода к движениям). СФА(система физической активности) - это не физкультура, не зарядка и, тем более не спорт – именно физическая активность, т.е. переосмысливание и изменение образа жизни в той части, что касается расхода энергии. Но для комплексного подхода надо иметь ввиду обе стороны медали.</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "spa/_spastic_muscle_condition" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://spalpu.ru/spa/spastic_muscle_condition", data_mytitle = "Состояние мышц" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "spa/PHIZ/_physical_activity" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://spalpu.ru/spa/physical_activity", data_mytitle = "Физическая активность" })

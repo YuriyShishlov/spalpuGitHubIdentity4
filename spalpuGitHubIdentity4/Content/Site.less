@@ -268,8 +268,9 @@ modal_body_padding_bottom_login {
 }
 
 #right h2 {
-    margin: 29px 0 24px 20px;
+    margin: 29px 0 24px 38px;
     padding: 0;
+    font-size: @size + 6px;
 }
 
 #right strong {
@@ -324,6 +325,20 @@ modal_body_padding_bottom_login {
 #loadcontent a.forward {
     float: right;
 }
+
+//Страница Ошибки
+#loadcontent a.link_main {
+    color: @color_font_article;
+}
+
+#loadcontent a.link_main:hover {
+    color: @background_back_forward;
+}
+
+#loadcontent a.link_main, #loadcontent a.link_main:hover {
+    text-decoration: underline;
+}
+//Конец страницы Ошибки
 
 #loadcontent a:hover {
     color: @color_back_forward_hover;

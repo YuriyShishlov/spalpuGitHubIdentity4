@@ -1,0 +1,39 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src="~/Content/img/spa.jpg" alt="Система физической активности, Андрей Кривошеев, личная гигиена, развитие выносливости, гимнастика" /></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+
+                    @*Книги верхнее меню*@
+                    @Html.Partial("~/Views/Shared/_knigi_mobile.cshtml")
+
+                </li>
+
+                @*<li>@Html.ActionLink("Видео", "Video", "Home")</li>*@
+                @*<li>@Html.ActionLink("Контакты", "Contact", "Home")</li>*@
+
+                @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    <li>@Html.ActionLink("RolesAdmin", "Index", "RolesAdmin")</li>
+                    <li>@Html.ActionLink("UsersAdmin", "Index", "UsersAdmin")</li>
+                }
+            </ul>
+
+            @*Вход Личный кабинет*@
+            @Html.Partial("_LoginPartial")
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
