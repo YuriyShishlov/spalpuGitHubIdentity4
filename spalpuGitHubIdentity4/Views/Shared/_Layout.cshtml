@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">@*Для максимальной совместимости bootstrap с IE*@
+    <meta name="author" content="Юрий Шишлов" />
     <title>@ViewBag.Title</title>
-    <link rel="SHORTCUT ICON" href="~/Content/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/favicon.ico" sizes="16x16" type="image/x-icon">
     @RenderSection("meta", required: false)
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -59,7 +59,7 @@
 
     @*Модальное окно*@
     @Html.Partial("~/Views/Shared/_Pop_up.cshtml")
-
+    @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 </body>

@@ -1,2 +1,7 @@
 User-agent: *
 Disallow: /WebMyReadme
+Disallow: /Views/Account
+Disallow: /Views/Manage
+Disallow: /Views/RolesAdmin
+Disallow: /Views/UsersAdmin
+Disallow: /Views/Error

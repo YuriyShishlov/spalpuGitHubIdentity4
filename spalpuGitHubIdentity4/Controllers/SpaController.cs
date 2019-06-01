@@ -44,5 +44,17 @@ namespace spalpuGitHubIdentity4.Controllers
         {
             return View();
         }
+        public ActionResult commonplace_truths()
+        {
+            return View();
+        }
+        public ActionResult effects_of_injury()
+        {
+            return View();
+        }
+        public ActionResult trial_error_method()
+        {
+            return View();
+        }
     }
 }

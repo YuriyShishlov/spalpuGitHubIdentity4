@@ -49,7 +49,7 @@ namespace IdentitySample
 
             bundles.Add(new StyleBundle("~/Content/mobilecss").Include(
                       "~/Content/less/bootstrap.css",
-                      "~/Content/fonts-awesome/css/font-awesome.css",
+                      //"~/Content/fonts-awesome/css/font-awesome.css",
                       "~/Content/SiteMobile.css"));
         }
     }

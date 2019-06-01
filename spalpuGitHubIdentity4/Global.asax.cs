@@ -1,4 +1,5 @@
 ﻿using IdentitySample.Models;
+using Moveax.Mvc.ErrorHandler;
 using System;
 using System.Data.Entity;
 using System.Web.Mvc;
@@ -19,7 +20,16 @@ namespace IdentitySample
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
-        
 
+        protected void Application_Error(object sender, System.EventArgs e)
+        {
+            var errorHandler = new MvcApplicationErrorHandler(application: this, exception: this.Server.GetLastError())
+            {
+                EnableHttpReturnCodes = true,
+                PassThroughHttp401 = false
+            };
+
+            errorHandler.Execute();
+        }
     }
 }
