@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace IdentitySample.Controllers
 {
+    [OutputCache(Duration = 604800)]
     public class lifegoController : Controller
     {
         // GET: lifego

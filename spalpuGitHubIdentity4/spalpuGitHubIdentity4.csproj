@@ -561,8 +561,6 @@
       <DependentUpon>Site.css</DependentUpon>
     </Content>
     <Content Include="favicon.ico" />
-    <Content Include="favicon16.png" />
-    <Content Include="favicon32.png" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -578,7 +576,6 @@
     <Content Include="Content\less\bootstrap.css.map">
       <DependentUpon>bootstrap.css</DependentUpon>
     </Content>
-    <Content Include="readme.txt" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\close_modal.js" />
     <Content Include="Scripts\EqualHeight.js" />
@@ -635,6 +632,7 @@
     <Content Include="Views\UsersAdmin\Details.cshtml" />
     <Content Include="Views\UsersAdmin\Edit.cshtml" />
     <Content Include="Views\UsersAdmin\Index.cshtml" />
+    <Content Include="WebMyReadme\spalpu.txt" />
     <Content Include="WebMyReadme\Замены\Адрес ссылки.html" />
     <Content Include="WebMyReadme\Замены\Главная.html" />
     <Content Include="WebMyReadme\Как сделать\Выравнивание_колонок.html" />
@@ -764,6 +762,16 @@
     <Content Include="Views\Shared\Error - Copy.cshtml" />
     <Content Include="Views\Error\Http404.cshtml" />
     <Content Include="Views\Error\Default.cshtml" />
+    <Content Include="Views\spa\psychological_attitudes.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_psychological_attitudes.cshtml" />
+    <Content Include="Views\spa\physical_activities.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_physical_activities.cshtml" />
+    <Content Include="Views\spa\relaxation.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_relaxation.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_relaxation - Copy.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_physical_activities - Copy.cshtml" />
+    <Content Include="Views\spa\stress_relaxation.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_stress_relaxation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

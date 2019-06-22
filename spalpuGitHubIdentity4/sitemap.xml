@@ -252,4 +252,28 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>http://spalpu.ru/spa/psychological_attitudes</loc>
+    <lastmod>2019-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://spalpu.ru/spa/physical_activities</loc>
+    <lastmod>2019-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://spalpu.ru/spa/relaxation</loc>
+    <lastmod>2019-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://spalpu.ru/spa/stress_relaxation</loc>
+    <lastmod>2019-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

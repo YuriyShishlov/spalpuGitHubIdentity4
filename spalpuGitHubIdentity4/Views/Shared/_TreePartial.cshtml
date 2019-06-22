@@ -12,7 +12,7 @@
 @*<h4>@Ajax.ActionLink("Жизнь - это Движение", "Index", "Home", new { strpage = "lifego/_lifego" }, ajaxopts, null)</h4>*@
 @*<h4><a href="#" id="life">Жизнь - это Движение</a></h4>*@
 <ul id="menu">
-    
+
     @*Первая книга*@
 
     <li class="active">
@@ -97,10 +97,18 @@
                     <li>@Ajax.ActionLink("Банальные истин", "Index", "Home", new { strpage = "spa/PHIZ/_commonplace_truths" }, ajaxopts, new { data_myurl = "http://spalpu.ru/spa/commonplace_truths", data_mytitle = "Банальные истины" })</li>
                     <li>@Ajax.ActionLink("Последств травм", "Index", "Home", new { strpage = "spa/PHIZ/_effects_of_injury" }, ajaxopts, new { data_myurl = "http://spalpu.ru/spa/effects_of_injury", data_mytitle = "Последствия травмы" })</li>
                     <li>@Ajax.ActionLink("Метод проб и ош", "Index", "Home", new { strpage = "spa/PHIZ/_trial_error_method" }, ajaxopts, new { data_myurl = "http://spalpu.ru/spa/trial_error_method", data_mytitle = "Метод проб и ошибок" })</li>
+                    <li>@Ajax.ActionLink("Психолог установ", "Index", "Home", new { strpage = "spa/PHIZ/_psychological_attitudes" }, ajaxopts, new { data_myurl = "http://spalpu.ru/spa/psychological_attitudes", data_mytitle = "Положительные психологические установки" })</li>
+                </ul>
+            </li>
+            <li>
+                @Ajax.RawActionLink("Физ. занятия <span class='fa arrow'></span>", "Index", "Home", new { strpage = "spa/PHIZ/_physical_activities" }, ajaxopts, new { data_myurl = "http://spalpu.ru/spa/physical_activities", data_mytitle = "Физические занятия" })
+                <ul>
+                    <li>@Ajax.ActionLink("Расслабление", "Index", "Home", new { strpage = "spa/PHIZ/_relaxation" }, ajaxopts, new { data_myurl = "http://spalpu.ru/spa/relaxation", data_mytitle = "Расслабление" })</li>
+                    <li>@Ajax.ActionLink("Волевое расслаб", "Index", "Home", new { strpage = "spa/PHIZ/_stress_relaxation" }, ajaxopts, new { data_myurl = "http://spalpu.ru/spa/stress_relaxation", data_mytitle = "Волевое расслабление" })</li>
+
                 </ul>
             </li>
         </ul>
     </li>
 
 </ul>
-

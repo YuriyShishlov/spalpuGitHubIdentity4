@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace spalpuGitHubIdentity4.Controllers
 {
+    [OutputCache(Duration = 604800)]
     public class spaController : Controller
     {
         public ActionResult spa()
@@ -53,6 +54,22 @@ namespace spalpuGitHubIdentity4.Controllers
             return View();
         }
         public ActionResult trial_error_method()
+        {
+            return View();
+        }
+        public ActionResult psychological_attitudes()
+        {
+            return View();
+        }
+        public ActionResult physical_activities()
+        {
+            return View();
+        }
+        public ActionResult relaxation()
+        {
+            return View();
+        }
+        public ActionResult stress_relaxation()
         {
             return View();
         }

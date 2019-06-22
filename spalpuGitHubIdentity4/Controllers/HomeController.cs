@@ -2,6 +2,7 @@
 
 namespace IdentitySample.Controllers
 {
+    [OutputCache(Duration=604800)]
     public class HomeController : Controller
     {
         public ActionResult ForgotPasswordConfirmationTest()
