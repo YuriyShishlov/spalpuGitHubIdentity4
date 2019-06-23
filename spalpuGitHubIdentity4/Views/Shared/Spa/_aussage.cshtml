@@ -1,5 +1,5 @@
-﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://spalpu.ru/spa/spa", data_mytitle = "Предисловия не читают" })
-@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_globalIssues" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://spalpu.ru/spa/globalIssues", data_mytitle = "Вопросы глобальные" })
+﻿@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://localhost:4632/spa/spa", data_mytitle = "Предисловия не читают" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_globalIssues" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://localhost:4632/spa/globalIssues", data_mytitle = "Вопросы глобальные" })
 
 <h1>Эта информация для вас</h1>
 
@@ -29,6 +29,6 @@
 <br />
 <br />
 
-@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://spalpu.ru/spa/spa", data_mytitle = "Предисловия не читают" })
-@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_globalIssues" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://spalpu.ru/spa/globalIssues", data_mytitle = "Вопросы глобальные" })
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "Spa/_spa" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://localhost:4632/spa/spa", data_mytitle = "Предисловия не читают" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "Spa/_globalIssues" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "forward", data_myurl = "http://localhost:4632/spa/globalIssues", data_mytitle = "Вопросы глобальные" })
 

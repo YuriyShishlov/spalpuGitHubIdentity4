@@ -7,7 +7,7 @@ function OnCompleteJs(request, status) {
 }
 
 2. Эта функция будет запущена по окончанию AJAX-запроса:
-@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://spalpu.ru/Lifego/LifeGo", data_mytitle = "" })
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs", OnSuccess = "OnSuccessJs" }, new { @class = "back", data_myurl = "http://localhost:4632/Lifego/LifeGo", data_mytitle = "" })
 @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new {strpage = "LifeGo/_mysshtsy"}, new AjaxOptions() {UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs"}, new {@class = "forward"})
 
 3. _Layout.cshtml:

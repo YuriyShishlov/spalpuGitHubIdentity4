@@ -1,278 +1,290 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://spalpu.ru/</loc>
+    <loc>http://localhost:4632/</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/lifego</loc>
+    <loc>http://localhost:4632/lifego/lifego</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/health</loc>
+    <loc>http://localhost:4632/lifego/health</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/osteochondrosis</loc>
+    <loc>http://localhost:4632/lifego/osteochondrosis</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/mysshtsy</loc>
+    <loc>http://localhost:4632/lifego/mysshtsy</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/whomysshtsy</loc>
+    <loc>http://localhost:4632/lifego/whomysshtsy</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/relaxation</loc>
+    <loc>http://localhost:4632/lifego/relaxation</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/gold_rules</loc>
+    <loc>http://localhost:4632/lifego/gold_rules</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/charging_for_tail</loc>
+    <loc>http://localhost:4632/lifego/charging_for_tail</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/singly</loc>
+    <loc>http://localhost:4632/lifego/singly</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/bars</loc>
+    <loc>http://localhost:4632/lifego/bars</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/breathing_exercises</loc>
+    <loc>http://localhost:4632/lifego/breathing_exercises</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/breathing_exercises_relax</loc>
+    <loc>http://localhost:4632/lifego/breathing_exercises_relax</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/massage</loc>
+    <loc>http://localhost:4632/lifego/massage</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/massage_and_pain</loc>
+    <loc>http://localhost:4632/lifego/massage_and_pain</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/massage_is_available_to_everyone</loc>
+    <loc>http://localhost:4632/lifego/massage_is_available_to_everyone</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/classic_massage</loc>
+    <loc>http://localhost:4632/lifego/classic_massage</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/thai_massage</loc>
+    <loc>http://localhost:4632/lifego/thai_massage</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/foot_massage</loc>
+    <loc>http://localhost:4632/lifego/foot_massage</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/pelvic_massage</loc>
+    <loc>http://localhost:4632/lifego/pelvic_massage</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/abdominal_massage</loc>
+    <loc>http://localhost:4632/lifego/abdominal_massage</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/neck_massage</loc>
+    <loc>http://localhost:4632/lifego/neck_massage</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/conclusion</loc>
+    <loc>http://localhost:4632/lifego/conclusion</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/attachment</loc>
+    <loc>http://localhost:4632/lifego/attachment</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/acute_period1</loc>
+    <loc>http://localhost:4632/lifego/acute_period1</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/acute_period2</loc>
+    <loc>http://localhost:4632/lifego/acute_period2</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/acute_period3</loc>
+    <loc>http://localhost:4632/lifego/acute_period3</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/special</loc>
+    <loc>http://localhost:4632/lifego/special</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/metodika</loc>
+    <loc>http://localhost:4632/lifego/metodika</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/lifego/all</loc>
+    <loc>http://localhost:4632/lifego/all</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/spa</loc>
+    <loc>http://localhost:4632/spa/spa</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/aussage</loc>
+    <loc>http://localhost:4632/spa/aussage</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/globalissues</loc>
+    <loc>http://localhost:4632/spa/globalissues</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/more_about_health</loc>
+    <loc>http://localhost:4632/spa/more_about_health</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/spastic_muscle_condition</loc>
+    <loc>http://localhost:4632/spa/spastic_muscle_condition</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/balanced_diet</loc>
+    <loc>http://localhost:4632/spa/balanced_diet</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/physical_activity</loc>
+    <loc>http://localhost:4632/spa/physical_activity</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/health_education</loc>
+    <loc>http://localhost:4632/spa/health_education</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/biomechanics</loc>
+    <loc>http://localhost:4632/spa/biomechanics</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/commonplace_truths</loc>
+    <loc>http://localhost:4632/spa/commonplace_truths</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/effects_of_injury</loc>
+    <loc>http://localhost:4632/spa/effects_of_injury</loc>
     <lastmod>2019-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/trial_error_method</loc>
+    <loc>http://localhost:4632/spa/trial_error_method</loc>
     <lastmod>2019-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/psychological_attitudes</loc>
+    <loc>http://localhost:4632/spa/psychological_attitudes</loc>
     <lastmod>2019-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/physical_activities</loc>
+    <loc>http://localhost:4632/spa/physical_activities</loc>
     <lastmod>2019-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/relaxation</loc>
+    <loc>http://localhost:4632/spa/relaxation</loc>
     <lastmod>2019-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://spalpu.ru/spa/stress_relaxation</loc>
+    <loc>http://localhost:4632/spa/stress_relaxation</loc>
     <lastmod>2019-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4632/spa/last_lyrical_digression</loc>
+    <lastmod>2019-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://localhost:4632/spa/desire_to_move</loc>
+    <lastmod>2019-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -73,5 +73,30 @@ namespace spalpuGitHubIdentity4.Controllers
         {
             return View();
         }
+        
+        public ActionResult last_lyrical_digression()
+        {
+            return View();
+        }
+        public ActionResult desire_to_move()
+        {
+            return View();
+        }
+        public ActionResult driving_dynamics()
+        {
+            return View();
+        }
+        public ActionResult move_relaxed()
+        {
+            return View();
+        }
+        public ActionResult how_to_break_a_brick()
+        {
+            return View();
+        }
+        public ActionResult energy_consumption()
+        {
+            return View();
+        }
     }
 }

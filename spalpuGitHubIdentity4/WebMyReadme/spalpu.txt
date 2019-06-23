@@ -1,6 +1,6 @@
-Расслабление
-relaxation
-_relaxation
-Волевое расслабление
-stress_relaxation
-_stress_relaxation
+Как сломать кирпич
+how_to_break_a_brick
+_how_to_break_a_brick
+Приход-расход энергии
+energy_consumption
+_energy_consumption
