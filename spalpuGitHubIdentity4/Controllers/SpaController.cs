@@ -98,5 +98,25 @@ namespace spalpuGitHubIdentity4.Controllers
         {
             return View();
         }
+        public ActionResult muscles_like_pumps()
+        {
+            return View();
+        }
+        public ActionResult when_to_engage()
+        {
+            return View();
+        }
+        public ActionResult prone_position()
+        {
+            return View();
+        }
+        public ActionResult smack()
+        {
+            return View();
+        }
+        public ActionResult reclining()
+        {
+            return View();
+        }
     }
 }

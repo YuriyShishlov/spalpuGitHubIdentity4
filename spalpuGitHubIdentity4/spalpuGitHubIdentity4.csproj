@@ -690,7 +690,9 @@
     <Content Include="Scripts\history.js\json2.js" />
     <Content Include="Scripts\startMenu.js" />
     <Content Include="Scripts\urlState.js" />
-    <Content Include="sitemap.xml" />
+    <Content Include="sitemap.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\DisplayEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -884,6 +886,16 @@
     <Content Include="Views\Shared\spa\PHIZ\_energy_consumption.cshtml" />
     <Content Include="Views\spa\energy_consumption.cshtml" />
     <Content Include="Views\Shared\spa\PHIZ\_energy_consumption - Copy.cshtml" />
+    <Content Include="Views\spa\muscles_like_pumps.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_muscles_like_pumps.cshtml" />
+    <Content Include="Views\spa\when_to_engage.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_when_to_engage.cshtml" />
+    <Content Include="Views\spa\prone_position.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_prone_position.cshtml" />
+    <Content Include="Views\spa\smack.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_smack.cshtml" />
+    <Content Include="Views\spa\reclining.cshtml" />
+    <Content Include="Views\Shared\spa\PHIZ\_reclining.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

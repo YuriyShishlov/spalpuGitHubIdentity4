@@ -1,6 +1,27 @@
-Как сломать кирпич
-how_to_break_a_brick
-_how_to_break_a_brick
+Полулежа
+reclining
+_reclining
+Потягивание
+smack
+_smack
+Положение лежа
+prone_position
+_prone_position
+Когда заниматься
+when_to_engage
+_when_to_engage
+Мышцы как насосы
+muscles_like_pumps
+_muscles_like_pumps
 Приход-расход энергии
 energy_consumption
 _energy_consumption
+Как сломать кирпич
+how_to_break_a_brick
+_how_to_break_a_brick
+Двигаться расслаблено
+move_relaxed
+_move_relaxed
+Динамика движения
+driving_dynamics
+_driving_dynamics
